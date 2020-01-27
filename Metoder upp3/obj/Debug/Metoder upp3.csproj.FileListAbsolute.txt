@@ -1,0 +1,6 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\bin\Debug\Metoder upp3.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\bin\Debug\Metoder upp3.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\bin\Debug\Metoder upp3.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\obj\Debug\Metoder upp3.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\obj\Debug\Metoder upp3.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder upp3\obj\Debug\Metoder upp3.pdb

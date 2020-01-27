@@ -1,0 +1,10 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.Form1.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.Properties.Resources.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.csproj.GenerateResource.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\bin\Debug\Skyttetävling2.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\bin\Debug\Skyttetävling2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\bin\Debug\Skyttetävling2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Skyttetävling2\obj\Debug\Skyttetävling2.pdb

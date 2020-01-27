@@ -1,0 +1,7 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

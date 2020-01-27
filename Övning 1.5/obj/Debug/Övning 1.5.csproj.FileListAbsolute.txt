@@ -1,0 +1,10 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\bin\Debug\Övning 1.5.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\bin\Debug\Övning 1.5.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\bin\Debug\Övning 1.5.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning 1.5.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning_1._5.Fordonsregister.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning_1._5.Properties.Resources.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning 1.5.csproj.GenerateResource.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning 1.5.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning 1.5.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 1.5\obj\Debug\Övning 1.5.pdb

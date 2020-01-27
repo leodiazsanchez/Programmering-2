@@ -1,0 +1,10 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser (mer) 1.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser__mer__1.Form1.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser__mer__1.Properties.Resources.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser (mer) 1.csproj.GenerateResource.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser (mer) 1.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\bin\Debug\Klasser (mer) 1.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\bin\Debug\Klasser (mer) 1.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\bin\Debug\Klasser (mer) 1.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser (mer) 1.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser (mer) 1\obj\Debug\Klasser (mer) 1.pdb

@@ -1,0 +1,6 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\bin\Debug\Metoder exempel 2.exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\bin\Debug\Metoder exempel 2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\bin\Debug\Metoder exempel 2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\obj\Debug\Metoder exempel 2.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\obj\Debug\Metoder exempel 2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Metoder exempel 2\obj\Debug\Metoder exempel 2.pdb
