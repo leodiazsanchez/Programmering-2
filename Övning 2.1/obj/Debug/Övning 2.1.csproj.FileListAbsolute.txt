@@ -8,3 +8,13 @@ I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Ö
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.1\obj\Debug\Övning 2.1.csproj.CoreCompileInputs.cache
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.1\obj\Debug\Övning 2.1.exe
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.1\obj\Debug\Övning 2.1.pdb
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\bin\Debug\Övning 2.1.exe.config
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\bin\Debug\Övning 2.1.exe
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\bin\Debug\Övning 2.1.pdb
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning 2.1.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning_2._1.Form1.resources
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning_2._1.Properties.Resources.resources
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning 2.1.csproj.GenerateResource.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning 2.1.csproj.CoreCompileInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning 2.1.exe
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.1\obj\Debug\Övning 2.1.pdb
