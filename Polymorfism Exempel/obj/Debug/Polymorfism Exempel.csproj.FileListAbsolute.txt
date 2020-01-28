@@ -1,0 +1,7 @@
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\bin\Debug\Polymorfism Exempel.exe.config
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\bin\Debug\Polymorfism Exempel.exe
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\bin\Debug\Polymorfism Exempel.pdb
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\obj\Debug\Polymorfism Exempel.csprojAssemblyReference.cache
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\obj\Debug\Polymorfism Exempel.csproj.CoreCompileInputs.cache
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\obj\Debug\Polymorfism Exempel.exe
+C:\Users\ledia_01\source\repos\Polymorfism Exempel\Polymorfism Exempel\obj\Debug\Polymorfism Exempel.pdb

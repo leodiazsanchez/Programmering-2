@@ -1,0 +1,10 @@
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\bin\Debug\Övning 2.3.exe.config
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\bin\Debug\Övning 2.3.exe
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\bin\Debug\Övning 2.3.pdb
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.csprojAssemblyReference.cache
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning_2._3.Form1.resources
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning_2._3.Properties.Resources.resources
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.csproj.GenerateResource.cache
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.csproj.CoreCompileInputs.cache
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.exe
+C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.pdb
