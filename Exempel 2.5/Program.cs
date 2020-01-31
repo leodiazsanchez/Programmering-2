@@ -11,12 +11,15 @@ namespace Exempel_2._5
         static void Main(string[] args)
         {
             Samling<string> nysamling = new Samling<string>();
-            nysamling.LäggTill("Hejsan");
-            nysamling.LäggTill("Hejdå");
-            nysamling.LäggTill("Programmering är kul");
-            nysamling.Tabort(1);
+            nysamling.LäggTill("A");
+            nysamling.LäggTill("Ö");
+            nysamling.LäggTill("F");
+            nysamling.LäggTill("Z");
+            nysamling.LäggTill("G");
+            nysamling.Sortera();
 
-            Console.WriteLine(nysamling.ElementFrån(1));
+
+            Console.WriteLine(nysamling.ToString());
 
             Console.ReadKey();
 

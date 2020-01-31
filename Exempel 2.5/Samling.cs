@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exempel_2._5
 {
-    public class Samling<T>
+    public class Samling<T> where T:IComparable<T>
     {
         protected int buffert;  //storleken på buffert.
         protected T[] lista;    //Samling av element av vilken typ som helst
         protected int längd;    //Antal tillgängliga platser.
         protected int antal;    //Antal använda platser.
-
+     
         public Samling()
         {
             buffert = 30;
@@ -46,7 +46,10 @@ namespace Exempel_2._5
             lista = temp;
             längd = antal;
         }
-
+        /// <summary>
+        /// Lägger till element i vår samling
+        /// </summary>
+        /// <param name="e"> Gentiska datatypen</param>
         public void LäggTill(T e)
         {
             //Skafa fler platser om det behövs.
@@ -54,7 +57,11 @@ namespace Exempel_2._5
 
             lista[antal++] = e;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public T Tabort(int index)
         {
             T temp = lista[index];
@@ -76,6 +83,36 @@ namespace Exempel_2._5
         public T ElementFrån(int index)
         {
             return lista[index];
+        }
+        /// <summary>
+        /// Sorterar min samling
+        /// </summary>
+        public void Sortera()
+        {
+            int i;
+            int n = antal;
+            if (n < 2) return;
+            T a;
+
+            for (int j = 0; j < n; j++)
+            {
+                a = lista[j];
+                i = j - 1;
+
+                while (i>= 0 && lista[i].CompareTo(a) > 0)
+                {
+                    lista[i + 1] = lista[i];
+                }
+
+                lista[i + 1] = a;
+            }
+        }
+
+        public override string ToString()
+        {
+            string print = "";
+
+            return print;
         }
     }
 
