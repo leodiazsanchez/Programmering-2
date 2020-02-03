@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övning_2._2
 {
-    class Anställd
+    abstract class Anställd
     {
         protected string namn;
 
@@ -15,10 +15,7 @@ namespace Övning_2._2
             this.namn = n;
         }
 
-        public virtual double BeräknaLön()
-        {
-            return 0;
-        }
+        public abstract double BeräknaLön();
 
         public override string ToString()
         {

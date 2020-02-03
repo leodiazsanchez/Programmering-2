@@ -30,8 +30,8 @@
         {
             this.lbxItems = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtnVikt = new System.Windows.Forms.RadioButton();
             this.rbtnSak = new System.Windows.Forms.RadioButton();
+            this.rbtnVikt = new System.Windows.Forms.RadioButton();
             this.tbxSum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -41,6 +41,7 @@
             this.tbxItem = new System.Windows.Forms.TextBox();
             this.tbxPrice = new System.Windows.Forms.TextBox();
             this.tbxAmount = new System.Windows.Forms.TextBox();
+            this.btnSort = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,17 +64,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Varutyp";
             // 
-            // rbtnVikt
-            // 
-            this.rbtnVikt.AutoSize = true;
-            this.rbtnVikt.Location = new System.Drawing.Point(6, 19);
-            this.rbtnVikt.Name = "rbtnVikt";
-            this.rbtnVikt.Size = new System.Drawing.Size(59, 17);
-            this.rbtnVikt.TabIndex = 0;
-            this.rbtnVikt.TabStop = true;
-            this.rbtnVikt.Text = "Lösvikt";
-            this.rbtnVikt.UseVisualStyleBackColor = true;
-            // 
             // rbtnSak
             // 
             this.rbtnSak.AutoSize = true;
@@ -84,6 +74,17 @@
             this.rbtnSak.TabStop = true;
             this.rbtnSak.Text = "Stycksak";
             this.rbtnSak.UseVisualStyleBackColor = true;
+            // 
+            // rbtnVikt
+            // 
+            this.rbtnVikt.AutoSize = true;
+            this.rbtnVikt.Location = new System.Drawing.Point(6, 19);
+            this.rbtnVikt.Name = "rbtnVikt";
+            this.rbtnVikt.Size = new System.Drawing.Size(59, 17);
+            this.rbtnVikt.TabIndex = 0;
+            this.rbtnVikt.TabStop = true;
+            this.rbtnVikt.Text = "Lösvikt";
+            this.rbtnVikt.UseVisualStyleBackColor = true;
             // 
             // tbxSum
             // 
@@ -103,7 +104,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(49, 387);
+            this.btnAdd.Location = new System.Drawing.Point(49, 322);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 4;
@@ -159,11 +160,22 @@
             this.tbxAmount.Size = new System.Drawing.Size(185, 20);
             this.tbxAmount.TabIndex = 10;
             // 
+            // btnSort
+            // 
+            this.btnSort.Location = new System.Drawing.Point(49, 370);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(75, 23);
+            this.btnSort.TabIndex = 11;
+            this.btnSort.Text = "Sortera";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSort);
             this.Controls.Add(this.tbxAmount);
             this.Controls.Add(this.tbxPrice);
             this.Controls.Add(this.tbxItem);
@@ -199,6 +211,7 @@
         private System.Windows.Forms.TextBox tbxItem;
         private System.Windows.Forms.TextBox tbxPrice;
         private System.Windows.Forms.TextBox tbxAmount;
+        private System.Windows.Forms.Button btnSort;
     }
 }
 
