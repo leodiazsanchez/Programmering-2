@@ -37,7 +37,7 @@ namespace Övning_2._3
 
         public override string ToString()
         {
-            return "Lånekonto" + personNummer + ": " + behållning;
+            return "Lånekonto" + personNummer + ": " + behållning ;
         }
 
 

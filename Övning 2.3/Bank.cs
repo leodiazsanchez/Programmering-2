@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övning_2._3
 {
-    class Bank
+    abstract class Bank
     {
         BankKonto konto;
     }

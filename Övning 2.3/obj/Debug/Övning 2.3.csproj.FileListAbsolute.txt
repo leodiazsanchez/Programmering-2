@@ -8,3 +8,13 @@ C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.csp
 C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.csproj.CoreCompileInputs.cache
 C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.exe
 C:\Users\ledia_01\source\repos\Övning 2.3\Övning 2.3\obj\Debug\Övning 2.3.pdb
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\bin\Debug\Övning 2.3.exe.config
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\bin\Debug\Övning 2.3.exe
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\bin\Debug\Övning 2.3.pdb
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning 2.3.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning_2._3.Form1.resources
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning_2._3.Properties.Resources.resources
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning 2.3.csproj.GenerateResource.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning 2.3.csproj.CoreCompileInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning 2.3.exe
+Z:\Leo\Rudbeck\Programmering 2\Repetition\Övning 2.3\obj\Debug\Övning 2.3.pdb

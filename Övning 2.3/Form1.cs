@@ -44,19 +44,25 @@ namespace Övning_2._3
         {
             string personNr = tbxPn.Text;
             double räntestats = double.Parse(tbxränta.Text);
-            double kredit = double.Parse(tbxkredit.Text);
+            double kredit;
 
-            if(kredit == 0)
+            if (!double.TryParse(tbxkredit.Text, out kredit))
+            {
+                MessageBox.Show("Kredit måste vara >= 0", Text);
+            }
+            else if (kredit == 0)
             {
                 SparKonto nyttspar = new SparKonto(personNr, räntestats);
                 listBox1.Items.Add(nyttspar);
                 bankkonton.Add(nyttspar);
-            } else
+            }
+            else
             {
                 Lånekonto nyttlåne = new Lånekonto(personNr, räntestats, kredit);
                 listBox1.Items.Add(nyttlåne);
                 bankkonton.Add(nyttlåne);
             }
+
 
             
 
