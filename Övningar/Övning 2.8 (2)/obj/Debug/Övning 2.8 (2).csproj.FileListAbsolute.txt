@@ -1,0 +1,10 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\bin\Debug\Övning 2.8 (2).exe.config
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\bin\Debug\Övning 2.8 (2).exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\bin\Debug\Övning 2.8 (2).pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning 2.8 (2).csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning_2._8__2_.Form1.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning_2._8__2_.Properties.Resources.resources
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning 2.8 (2).csproj.GenerateResource.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning 2.8 (2).csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning 2.8 (2).exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Övning 2.8 (2)\obj\Debug\Övning 2.8 (2).pdb

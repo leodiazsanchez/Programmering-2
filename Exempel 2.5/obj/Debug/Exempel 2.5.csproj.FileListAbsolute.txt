@@ -1,7 +1,0 @@
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\bin\Debug\Exempel 2.5.exe.config
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\bin\Debug\Exempel 2.5.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\bin\Debug\Exempel 2.5.pdb
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\obj\Debug\Exempel 2.5.csprojAssemblyReference.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\obj\Debug\Exempel 2.5.csproj.CoreCompileInputs.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\obj\Debug\Exempel 2.5.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Exempel 2.5\obj\Debug\Exempel 2.5.pdb

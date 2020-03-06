@@ -1,7 +1,0 @@
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\bin\Debug\Klasser.exe.config
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\bin\Debug\Klasser.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\bin\Debug\Klasser.pdb
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\obj\Debug\Klasser.csprojAssemblyReference.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\obj\Debug\Klasser.csproj.CoreCompileInputs.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\obj\Debug\Klasser.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Klasser\obj\Debug\Klasser.pdb

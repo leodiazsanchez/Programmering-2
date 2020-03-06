@@ -1,7 +1,0 @@
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\bin\Debug\Test på överlagrade metoder.exe.config
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\bin\Debug\Test på överlagrade metoder.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\bin\Debug\Test på överlagrade metoder.pdb
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\obj\Debug\Test på överlagrade metoder.csprojAssemblyReference.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\obj\Debug\Test på överlagrade metoder.csproj.CoreCompileInputs.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\obj\Debug\Test på överlagrade metoder.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Test på överlagrade metoder\obj\Debug\Test på överlagrade metoder.pdb

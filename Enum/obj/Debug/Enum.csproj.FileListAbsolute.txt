@@ -1,7 +1,0 @@
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\bin\Debug\Enum.exe.config
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\bin\Debug\Enum.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\bin\Debug\Enum.pdb
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\obj\Debug\Enum.csprojAssemblyReference.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\obj\Debug\Enum.csproj.CoreCompileInputs.cache
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\obj\Debug\Enum.exe
-I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Enum\obj\Debug\Enum.pdb
