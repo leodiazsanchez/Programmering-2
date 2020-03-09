@@ -32,3 +32,5 @@ I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\Spa
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb

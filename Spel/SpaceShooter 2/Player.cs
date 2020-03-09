@@ -35,12 +35,12 @@ namespace ExGame
 
 
             if (keyboardState.IsKeyDown(Keys.D))
-                vector.X += speed.X;
+                speed.X += 2f;
             if (keyboardState.IsKeyDown(Keys.A))
-                vector.X -= speed.X;
+                speed.X -= 2f;
             //if (keyboardState.IsKeyDown(Keys.S))
             //    vector.Y += speed.Y;
-            if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height)
+            if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height - 50)
             {
                 speed.Y -= 20f;
                 isJumping = true;

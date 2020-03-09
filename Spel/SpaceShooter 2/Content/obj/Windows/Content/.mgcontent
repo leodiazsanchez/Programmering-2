@@ -12,7 +12,9 @@
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/menu/start.png</File>
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/player/adventurer-run-00.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/player/adventurer-Sheet.png</File>
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/player/FB000.gif</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/player/run.png</File>
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
     <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/myFont.spritefont</File>
   </SourceFiles>
@@ -25,7 +27,9 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>images/player/adv.png</File>
+    <File xsi:nil="true" />
     <File>images/player/bullet.gif</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
