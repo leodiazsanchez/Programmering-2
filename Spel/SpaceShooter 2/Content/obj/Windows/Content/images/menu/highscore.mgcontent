@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/images/menu/highscore.png</SourceFile>
-  <SourceTime>2020-02-04T09:20:34.4158111+01:00</SourceTime>
-  <DestFile>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/bin/Windows/Content/images/menu/highscore.xnb</DestFile>
-  <DestTime>2020-03-03T08:59:48.3946738+01:00</DestTime>
+  <SourceFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/images/menu/highscore.png</SourceFile>
+  <SourceTime>2020-03-09T14:56:57+01:00</SourceTime>
+  <DestFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/bin/Windows/Content/images/menu/highscore.xnb</DestFile>
+  <DestTime>2020-03-09T19:46:10.8226888+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

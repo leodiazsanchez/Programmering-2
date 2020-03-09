@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/ledia_01/Downloads/Free Pixel Art Forest/Free Pixel Art Forest/Preview/Background.png</SourceFile>
-  <SourceTime>2020-03-03T10:06:36.0626666+01:00</SourceTime>
-  <DestFile>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Eget spel/SpaceShooter 2/Content/bin/Windows/Content/images/Background.xnb</DestFile>
-  <DestTime>2020-03-03T10:06:53.6892644+01:00</DestTime>
+  <SourceFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/images/background.png</SourceFile>
+  <SourceTime>2017-02-21T19:32:17.4870734+01:00</SourceTime>
+  <DestFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/bin/Windows/Content/images/background.xnb</DestFile>
+  <DestTime>2020-03-09T19:53:23.6695399+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

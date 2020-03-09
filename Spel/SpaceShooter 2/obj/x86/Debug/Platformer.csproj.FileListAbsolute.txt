@@ -34,3 +34,41 @@ I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\Spa
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\coin.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\bullet.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\exit.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\highscore.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\start.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\mine.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\tripod.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\Background.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.exe
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.pdb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CoreCompileInputs.cache
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runright.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\idle.xnb

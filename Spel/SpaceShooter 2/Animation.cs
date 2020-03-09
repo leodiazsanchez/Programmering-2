@@ -24,11 +24,29 @@ namespace SpaceShooter2
         int frameWidth;
         int frameHeight;
         bool looping;
+        string asset;
+
+        public Animation(ContentManager Content, string asset, float frameSpeed, int numOffFrames, bool looping)
+        {
+            this.numOffFrames = numOffFrames;
+            this.looping = looping;
+            this.animation = Content.Load<Texture2D>(asset);
+            this.frameTime = frameSpeed;
+            frameWidth = (animation.Width / numOffFrames);
+            frameHeight = (animation.Height);
+            position = new Vector2(380, 400);
+        }
 
         public Vector2 Position
         {
             get { return this.position; }
             set { this.position = value; }
+        }
+
+        public string Asset
+        {
+            get { return this.asset; }
+            set { this.asset = value; }
         }
 
         public int FrameWidth
@@ -41,16 +59,7 @@ namespace SpaceShooter2
             get { return this.frameHeight; }
         }
 
-        public Animation(ContentManager Content, string asset, float frameSpeed, int numOffFrames, bool looping)
-        {
-            this.numOffFrames = numOffFrames;
-            this.looping = looping;
-            this.animation = Content.Load<Texture2D>(asset);
-            this.frameTime = frameSpeed;
-            frameWidth = (animation.Width / numOffFrames);
-            frameHeight = (animation.Height);
-            position = new Vector2(380, 400);
-        }
+      
 
         public void PlayAnim(GameTime gameTime)
         {

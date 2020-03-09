@@ -18,7 +18,7 @@ namespace SpaceShooter2
 
         public void Update(GameWindow window, int nrBackgroundsX)
         {
-            vector.X += 2f;
+            vector.X += 0f;
             if(vector.X > window.ClientBounds.Width)
             {
                 vector.X = vector.X - nrBackgroundsX * texture.Width;

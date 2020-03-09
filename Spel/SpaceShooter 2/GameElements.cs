@@ -16,7 +16,7 @@ namespace ExGame
         static Texture2D menuSprite;
         static Vector2 menuPos;
         static Player player;
-        static Animation animation;
+        static Animation playeranim;
         static List<GoldCoin> goldCoins;
         static List<Enemy> enemies;
         static Texture2D goldCoinSprite;
@@ -44,7 +44,7 @@ namespace ExGame
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
             player = new Player(content.Load<Texture2D>("images/player/adv"), 380, 400, 2.5f, 4.5f, content.Load<Texture2D>("images/player/bullet"));
-            animation = new Animation(content, "images/player/run",1f, 7, true);
+            playeranim = new Animation(content, player.SpritePath,150f, 4, true);
             background = new Background(content.Load<Texture2D>("images/background"), window);
             enemies = new List<Enemy>();
             goldCoins = new List<GoldCoin>();
@@ -142,8 +142,9 @@ namespace ExGame
                 Reset(window, content);
                 return State.Menu;
             }
-
-            animation.PlayAnim(gameTime);
+            playeranim.Asset = player.SpritePath;
+            playeranim.Position = player.Position;
+            playeranim.PlayAnim(gameTime);
             return State.Run;
         }
 
@@ -151,6 +152,7 @@ namespace ExGame
         {
             background.Draw(spriteBatch);
             player.Draw(spriteBatch);
+            playeranim.Draw(spriteBatch);
             foreach (Enemy e in enemies)
             {
                 e.Draw(spriteBatch);
@@ -160,7 +162,7 @@ namespace ExGame
                 gc.Draw(spriteBatch);
             }
             printText.Print("Points:" + player.Points, spriteBatch, 0, 0);
-            animation.Draw(spriteBatch);
+   
         }
 
         public static State HighScoreUpdate()

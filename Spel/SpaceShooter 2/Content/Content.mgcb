@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin C:/Users/ledia_01/Downloads/Free Pixel Art Forest/Free Pixel Art Forest/Preview/Background.png
+#begin images/background.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,7 +23,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:C:/Users/ledia_01/Downloads/Free Pixel Art Forest/Free Pixel Art Forest/Preview/Background.png;images/Background.png
+/build:images/background.png
 
 #begin images/enemies/mine.png
 /importer:TextureImporter
@@ -133,6 +133,18 @@
 /processorParam:TextureFormat=Color
 /build:images/player/FB000.gif;images/player/bullet.gif
 
+#begin images/player/idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/idle.png
+
 #begin images/player/run.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -144,6 +156,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:images/player/run.png
+
+#begin images/player/runright.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/runright.png
 
 #begin images/powerups/coin.png
 /importer:TextureImporter

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using SpaceShooter2;
 
 namespace ExGame
 {
@@ -15,6 +17,7 @@ namespace ExGame
         Texture2D bulletTexture;
         double timeSinceLastBullet = 0;
         private int points = 0;
+        string spritePath = "images/player/idle";
         public int Points { get { return points; } set { points = value; } }
 
 
@@ -25,6 +28,16 @@ namespace ExGame
             this.bulletTexture = bulletTexture;
         }
 
+        public Vector2 Position
+        {
+            get { return this.vector; }
+        }
+
+        public string SpritePath
+        {
+            get { return this.spritePath; }
+            
+        }
 
 
         public void Update(GameWindow window, GameTime gameTime)
@@ -35,9 +48,19 @@ namespace ExGame
 
 
             if (keyboardState.IsKeyDown(Keys.D))
+            {
                 speed.X += 2f;
+                spritePath = "images/player/run";
+            }
+                
+
             if (keyboardState.IsKeyDown(Keys.A))
+            {
                 speed.X -= 2f;
+                spritePath = "images/player/runright";
+            }
+                
+
             //if (keyboardState.IsKeyDown(Keys.S))
             //    vector.Y += speed.Y;
             if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height - 50)
@@ -74,6 +97,7 @@ namespace ExGame
                 speed.Y += GameElements.gravity; 
             }
 
+       
 
             // TODO: Add your update logic here
 
@@ -112,6 +136,7 @@ namespace ExGame
                 return bullets;
             }
         }
+
 
         public override void Draw(SpriteBatch spriteBatch)
         {
