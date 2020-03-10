@@ -32,8 +32,8 @@ namespace ExGame
 
         public bool IsJumping
         {
-            get { return isAlive; }
-            set { isAlive = value; }
+            get { return isJumping; }
+            set { isJumping = value; }
         }
 
 

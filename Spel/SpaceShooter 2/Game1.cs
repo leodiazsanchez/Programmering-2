@@ -17,7 +17,6 @@ namespace ExGame
 
         public Game1()
         {
-          
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
@@ -31,6 +30,7 @@ namespace ExGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
             GameElements.currentState = GameElements.State.Menu;
             GameElements.Initialize();
             base.Initialize();

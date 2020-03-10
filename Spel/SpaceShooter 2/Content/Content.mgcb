@@ -97,18 +97,6 @@
 /processorParam:TextureFormat=Color
 /build:images/menu/start.png
 
-#begin images/player/adventurer-run-00.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:images/player/adventurer-run-00.png;images/player/adv.png
-
 #begin images/player/adventurer-Sheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -121,7 +109,7 @@
 /processorParam:TextureFormat=Color
 /build:images/player/adventurer-Sheet.png
 
-#begin images/player/FB000.gif
+#begin images/player/attack.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -131,7 +119,43 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:images/player/FB000.gif;images/player/bullet.gif
+/build:images/player/attack.png
+
+#begin images/player/attack2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/attack2.png
+
+#begin images/player/falling.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/falling.png
+
+#begin images/player/HP/bar.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/HP/bar.png
 
 #begin images/player/idle.png
 /importer:TextureImporter
@@ -157,6 +181,18 @@
 /processorParam:TextureFormat=Color
 /build:images/player/jump.png
 
+#begin images/player/placeholder.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/placeholder.png
+
 #begin images/player/run.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -168,18 +204,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:images/player/run.png
-
-#begin images/player/runright.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:images/player/runright.png
 
 #begin images/powerups/coin.png
 /importer:TextureImporter

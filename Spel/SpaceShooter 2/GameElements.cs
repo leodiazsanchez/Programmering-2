@@ -43,8 +43,8 @@ namespace ExGame
             menu.AddItem(content.Load<Texture2D>("images/menu/start"), (int)State.Run);
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
-            player = new Player(content.Load<Texture2D>("images/player/adv"), 380, 400, 2.5f, 4.5f, content.Load<Texture2D>("images/player/bullet"), content);
-            playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"),150f, player.NumFrames, true);
+            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2.5f, 4.5f, content.Load<Texture2D>("images/player/bullet"), content);
+            playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"),200f, player.NumFrames, true);
             background = new Background(content.Load<Texture2D>("images/background"), window);
             enemies = new List<Enemy>();
             goldCoins = new List<GoldCoin>();
@@ -52,7 +52,7 @@ namespace ExGame
             goldCoinSprite = content.Load<Texture2D>("images/powerups/coin");
             Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
 
-            for (int i = 0; i < 5; i++)
+            /*for (int i = 0; i < 5; i++)
             {
                 int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
@@ -66,8 +66,8 @@ namespace ExGame
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
                 Tripod temp = new Tripod(tmpSprite, rndX, rndY);
                 enemies.Add(temp);
-            }
-            goldCoinSprite = content.Load<Texture2D>("images/powerups/coin");
+            }*/
+            //goldCoinSprite = content.Load<Texture2D>("images/powerups/coin");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
         }
 
@@ -87,6 +87,11 @@ namespace ExGame
         {
             background.Update(window);
             player.Update(window, gameTime, content);
+
+            if (player.CheckCollision(player))
+            {
+                player.isAir(false);
+            }
 
             foreach (Enemy e in enemies.ToList())
             {
@@ -111,7 +116,7 @@ namespace ExGame
             }
 
 
-            Random random = new Random();
+            /*Random random = new Random();
             int newCoin = random.Next(1, 200);
             if (newCoin == 1)
             {
@@ -136,7 +141,7 @@ namespace ExGame
                 {
                     goldCoins.Remove(gc);
                 }
-            }
+            }*/
 
             if (!player.IsAlive)
             {
@@ -146,6 +151,7 @@ namespace ExGame
 
             playeranim.Position = player.Position;
             playeranim.Asset = player.SpritePath;
+            playeranim.Rotation = player.Rotation;
             playeranim.NumOffFrames = player.NumFrames;
             playeranim.PlayAnim(gameTime);
             return State.Run;

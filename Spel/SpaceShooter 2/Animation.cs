@@ -24,7 +24,9 @@ namespace SpaceShooter2
         int frameWidth;
         int frameHeight;
         bool looping;
+        SpriteEffects rotation;
         Texture2D asset;
+
 
         public Animation(ContentManager Content, Texture2D asset, float frameSpeed, int numOffFrames, bool looping)
         {
@@ -47,6 +49,12 @@ namespace SpaceShooter2
         {
             get { return this.numOffFrames; }
             set { this.numOffFrames = value; }
+        }
+
+        public SpriteEffects Rotation
+        {
+            get { return this.rotation; }
+            set { this.rotation = value; }
         }
 
         public Texture2D Asset
@@ -91,7 +99,7 @@ namespace SpaceShooter2
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 1f);
+            spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1.4f, rotation, 0f);
         }
     }
 }

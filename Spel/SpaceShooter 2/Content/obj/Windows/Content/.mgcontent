@@ -4,22 +4,24 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/background.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/enemies/mine.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/enemies/tripod.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/menu.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/menu/exit.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/menu/start.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/adventurer-run-00.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/adventurer-Sheet.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/FB000.gif</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/idle.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/jump.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/run.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/runright.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/myFont.spritefont</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/background.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/mine.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/tripod.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/exit.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/start.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/adventurer-Sheet.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack2.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/falling.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/bar.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/idle.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/jump.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/placeholder.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/run.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/myFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
@@ -29,9 +31,11 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
-    <File>images/player/adv.png</File>
     <File xsi:nil="true" />
-    <File>images/player/bullet.gif</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

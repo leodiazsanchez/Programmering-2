@@ -18,10 +18,10 @@ namespace ExGame
         double timeSinceLastBullet = 0;
         private int points = 0;
         Texture2D spritePath;
+        bool Air;
         int numFrames;
-        public int Points { get { return points; } set { points = value; } }
-
-
+        SpriteEffects rotation = SpriteEffects.None;
+     
 
         public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, ContentManager content) : base(texture, X, Y, speedX, speedY )
         {
@@ -37,10 +37,22 @@ namespace ExGame
             get { return this.vector; }
         }
 
+        public int Points
+        {
+            get { return points; }
+            set { points = value; }
+        }
+
         public Texture2D SpritePath
         {
             get { return this.spritePath; }
             
+        }
+
+        public SpriteEffects Rotation
+        {
+            get { return this.rotation; }
+
         }
 
         public int NumFrames
@@ -49,23 +61,28 @@ namespace ExGame
 
         }
 
+        public bool isAir(bool inAir)
+        {
+            Air = inAir;
+            return Air;
+        }
+
 
         public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
 
             KeyboardState keyboardState = Keyboard.GetState();
 
+            //Default
             numFrames = 4;
             spritePath = content.Load<Texture2D>("images/player/idle");
             
-  
-
-
             if (keyboardState.IsKeyDown(Keys.D))
             {
                 speed.X += 1.5f;
-                spritePath = content.Load<Texture2D>("images/player/runright"); ;
+                spritePath = content.Load<Texture2D>("images/player/run"); ;
                 numFrames = 6;
+                rotation = SpriteEffects.None;
             }
                 
 
@@ -74,14 +91,22 @@ namespace ExGame
                 speed.X -= 1.5f;
                 spritePath = content.Load<Texture2D>("images/player/run");
                 numFrames = 6;
+                rotation = SpriteEffects.FlipHorizontally;
+
+            }
+
+            if(keyboardState.IsKeyDown(Keys.A) && keyboardState.IsKeyDown(Keys.D))
+            {
+                numFrames = 4;
+                spritePath = content.Load<Texture2D>("images/player/idle");
             }
                 
 
             //if (keyboardState.IsKeyDown(Keys.S))
             //    vector.Y += speed.Y;
-            if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height - 50)
+            if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height - 60)
             {
-                speed.Y -= 20f;
+                speed.Y -= 15f;
                 isJumping = true;
                 
             }
@@ -89,17 +114,25 @@ namespace ExGame
             if (keyboardState.IsKeyDown(Keys.Escape)){
                 isAlive = false;
             }
-            if (keyboardState.IsKeyDown(Keys.Space))
+            if (keyboardState.IsKeyDown(Keys.Z))
             {
-                if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)
-                {
-                    Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                spritePath = content.Load<Texture2D>("images/player/attack");
+                numFrames = 4;
+                
+              
+                /* if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)
+                 {
+                     Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
 
-                    bullets.Add(temp);
+                     bullets.Add(temp);
 
-                    timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
-                }
+                     timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
+                 }*/
 
+            }
+            if (keyboardState.IsKeyDown(Keys.X)){
+                spritePath = content.Load<Texture2D>("images/player/attack2");
+                numFrames = 7;
             }
             foreach (Bullet b in bullets.ToList())
             {
@@ -145,7 +178,7 @@ namespace ExGame
             vector.Y += speed.Y;
 
             vector.X = Math.Min(Math.Max(vector.X, 0), window.ClientBounds.Width-texture.Width);
-            vector.Y = Math.Min(Math.Max(vector.Y, 0), window.ClientBounds.Height - texture.Height - 50);
+            vector.Y = Math.Min(Math.Max(vector.Y, 0), window.ClientBounds.Height - texture.Height - 60);
 
         }
         public List<Bullet> Bullets
@@ -177,6 +210,7 @@ namespace ExGame
             timeSinceLastBullet = 0;
             points = 0;
             isAlive = true;
+            isJumping = false;
         }
 
        
