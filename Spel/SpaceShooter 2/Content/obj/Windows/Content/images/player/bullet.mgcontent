@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/images/player/FB000.gif</SourceFile>
-  <SourceTime>2020-03-09T14:56:57+01:00</SourceTime>
-  <DestFile>D:/Hämtade filer/Programmering-2-master/Programmering-2-master/Spel/SpaceShooter 2/Content/bin/Windows/Content/images/player/bullet.xnb</DestFile>
-  <DestTime>2020-03-09T19:46:10.8865182+01:00</DestTime>
+  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/images/player/FB000.gif</SourceFile>
+  <SourceTime>2020-03-03T09:58:07.1765086+01:00</SourceTime>
+  <DestFile>I:/rbk/Elevmtrl 03-04/Data/Tatiana/Elevmappar/PROG2221950/ledia_01/Repetition/Spel/SpaceShooter 2/Content/bin/Windows/Content/images/player/bullet.xnb</DestFile>
+  <DestTime>2020-03-10T08:20:14.473345+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

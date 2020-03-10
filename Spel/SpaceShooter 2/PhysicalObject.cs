@@ -35,5 +35,8 @@ namespace ExGame
             get { return isAlive; }
             set { isAlive = value; }
         }
+
+
+
     }
 }

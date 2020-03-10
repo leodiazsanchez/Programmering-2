@@ -24,16 +24,16 @@ namespace SpaceShooter2
         int frameWidth;
         int frameHeight;
         bool looping;
-        string asset;
+        Texture2D asset;
 
-        public Animation(ContentManager Content, string asset, float frameSpeed, int numOffFrames, bool looping)
+        public Animation(ContentManager Content, Texture2D asset, float frameSpeed, int numOffFrames, bool looping)
         {
             this.numOffFrames = numOffFrames;
             this.looping = looping;
-            this.animation = Content.Load<Texture2D>(asset);
+            this.asset = asset;
             this.frameTime = frameSpeed;
-            frameWidth = (animation.Width / numOffFrames);
-            frameHeight = (animation.Height);
+            frameWidth = (asset.Width / numOffFrames);
+            frameHeight = (asset.Height);
             position = new Vector2(380, 400);
         }
 
@@ -43,7 +43,13 @@ namespace SpaceShooter2
             set { this.position = value; }
         }
 
-        public string Asset
+        public int NumOffFrames
+        {
+            get { return this.numOffFrames; }
+            set { this.numOffFrames = value; }
+        }
+
+        public Texture2D Asset
         {
             get { return this.asset; }
             set { this.asset = value; }
@@ -85,7 +91,7 @@ namespace SpaceShooter2
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(animation, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 1f);
+            spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 1f);
         }
     }
 }

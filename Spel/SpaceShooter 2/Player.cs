@@ -17,15 +17,19 @@ namespace ExGame
         Texture2D bulletTexture;
         double timeSinceLastBullet = 0;
         private int points = 0;
-        string spritePath = "images/player/idle";
+        Texture2D spritePath;
+        int numFrames;
         public int Points { get { return points; } set { points = value; } }
 
 
 
-        public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY )
+        public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, ContentManager content) : base(texture, X, Y, speedX, speedY )
         {
             bullets = new List<Bullet>();
             this.bulletTexture = bulletTexture;
+            numFrames = 4;
+            spritePath = content.Load<Texture2D>("images/player/idle");
+            isJumping = false;
         }
 
         public Vector2 Position
@@ -33,31 +37,43 @@ namespace ExGame
             get { return this.vector; }
         }
 
-        public string SpritePath
+        public Texture2D SpritePath
         {
             get { return this.spritePath; }
             
         }
 
+        public int NumFrames
+        {
+            get { return this.numFrames; }
 
-        public void Update(GameWindow window, GameTime gameTime)
+        }
+
+
+        public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
 
             KeyboardState keyboardState = Keyboard.GetState();
 
+            numFrames = 4;
+            spritePath = content.Load<Texture2D>("images/player/idle");
+            
+  
 
 
             if (keyboardState.IsKeyDown(Keys.D))
             {
-                speed.X += 2f;
-                spritePath = "images/player/run";
+                speed.X += 1.5f;
+                spritePath = content.Load<Texture2D>("images/player/runright"); ;
+                numFrames = 6;
             }
                 
 
             if (keyboardState.IsKeyDown(Keys.A))
             {
-                speed.X -= 2f;
-                spritePath = "images/player/runright";
+                speed.X -= 1.5f;
+                spritePath = content.Load<Texture2D>("images/player/run");
+                numFrames = 6;
             }
                 
 
@@ -83,6 +99,7 @@ namespace ExGame
 
                     timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
                 }
+
             }
             foreach (Bullet b in bullets.ToList())
             {
@@ -94,8 +111,9 @@ namespace ExGame
             }
             if (isJumping)
             {
-                speed.Y += GameElements.gravity; 
+                speed.Y += GameElements.gravity;
             }
+       
 
        
 
@@ -121,6 +139,7 @@ namespace ExGame
             {
                 speed.X += GameElements.xFriktion;
             }
+
 
             vector.X += speed.X;
             vector.Y += speed.Y;
