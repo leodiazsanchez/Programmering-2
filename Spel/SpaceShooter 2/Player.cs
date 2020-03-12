@@ -14,18 +14,20 @@ namespace ExGame
     class Player : PhysicalObject
     {
         List<Bullet> bullets;
-        Texture2D bulletTexture;
+        Texture2D bulletTexture, hp;
         double timeSinceLastBullet = 0;
-        private int points = 0;
+        private int points = 4;
         Texture2D spritePath;
-        bool Air;
         int numFrames;
+        int who;
         SpriteEffects rotation = SpriteEffects.None;
      
 
-        public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, ContentManager content) : base(texture, X, Y, speedX, speedY )
+        public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, Texture2D hp, int who, ContentManager content) : base(texture, X, Y, speedX, speedY )
         {
             bullets = new List<Bullet>();
+            this.hp = hp;
+            this.who = who;
             this.bulletTexture = bulletTexture;
             numFrames = 4;
             spritePath = content.Load<Texture2D>("images/player/idle");
@@ -61,11 +63,6 @@ namespace ExGame
 
         }
 
-        public bool isAir(bool inAir)
-        {
-            Air = inAir;
-            return Air;
-        }
 
 
         public void Update(GameWindow window, GameTime gameTime, ContentManager content)
@@ -76,64 +73,108 @@ namespace ExGame
             //Default
             numFrames = 4;
             spritePath = content.Load<Texture2D>("images/player/idle");
-            
-            if (keyboardState.IsKeyDown(Keys.D))
-            {
-                speed.X += 1.5f;
-                spritePath = content.Load<Texture2D>("images/player/run"); ;
-                numFrames = 6;
-                rotation = SpriteEffects.None;
-            }
-                
 
-            if (keyboardState.IsKeyDown(Keys.A))
+            if(who == 1)
             {
-                speed.X -= 1.5f;
-                spritePath = content.Load<Texture2D>("images/player/run");
-                numFrames = 6;
-                rotation = SpriteEffects.FlipHorizontally;
+                if (keyboardState.IsKeyDown(Keys.D))
+                {
+                    speed.X += 1.5f;
+                    spritePath = content.Load<Texture2D>("images/player/run"); ;
+                    numFrames = 6;
+                    rotation = SpriteEffects.None;
+                }
 
-            }
 
-            if(keyboardState.IsKeyDown(Keys.A) && keyboardState.IsKeyDown(Keys.D))
+                if (keyboardState.IsKeyDown(Keys.A))
+                {
+                    speed.X -= 1.5f;
+                    spritePath = content.Load<Texture2D>("images/player/run");
+                    numFrames = 6;
+                    rotation = SpriteEffects.FlipHorizontally;
+
+                }
+
+                if (keyboardState.IsKeyDown(Keys.A) && keyboardState.IsKeyDown(Keys.D))
+                {
+                    numFrames = 4;
+                    spritePath = content.Load<Texture2D>("images/player/idle");
+                }
+
+
+                //if (keyboardState.IsKeyDown(Keys.S))
+                //    vector.Y += speed.Y;
+                if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height - texture.Height - 60)
+                {
+                    speed.Y -= 15f;
+                    isJumping = true;
+
+                }
+
+                if (keyboardState.IsKeyDown(Keys.Z))
+                {
+                    spritePath = content.Load<Texture2D>("images/player/attack");
+                    numFrames = 4;
+
+
+                    /* if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)
+                     {
+                         Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+
+                         bullets.Add(temp);
+
+                         timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
+                     }*/
+
+                }
+
+                if (keyboardState.IsKeyDown(Keys.X))
+                {
+                    spritePath = content.Load<Texture2D>("images/player/attack2");
+                    numFrames = 7;
+
+                }
+            } else if (who == 2)
             {
-                numFrames = 4;
-                spritePath = content.Load<Texture2D>("images/player/idle");
-            }
-                
+                if (keyboardState.IsKeyDown(Keys.Right))
+                {
+                    speed.X += 1.5f;
+                    spritePath = content.Load<Texture2D>("images/player/run"); ;
+                    numFrames = 6;
+                    rotation = SpriteEffects.None;
+                }
 
-            //if (keyboardState.IsKeyDown(Keys.S))
-            //    vector.Y += speed.Y;
-            if (keyboardState.IsKeyDown(Keys.W) && vector.Y == window.ClientBounds.Height-texture.Height - 60)
-            {
-                speed.Y -= 15f;
-                isJumping = true;
-                
+
+                if (keyboardState.IsKeyDown(Keys.Left))
+                {
+                    speed.X -= 1.5f;
+                    spritePath = content.Load<Texture2D>("images/player/run");
+                    numFrames = 6;
+                    rotation = SpriteEffects.FlipHorizontally;
+
+                }
+
+                if (keyboardState.IsKeyDown(Keys.Left) && keyboardState.IsKeyDown(Keys.Right))
+                {
+                    numFrames = 4;
+                    spritePath = content.Load<Texture2D>("images/player/idle");
+                }
+
+
+                //if (keyboardState.IsKeyDown(Keys.S))
+                //    vector.Y += speed.Y;
+                if (keyboardState.IsKeyDown(Keys.Up) && vector.Y == window.ClientBounds.Height - texture.Height - 60)
+                {
+                    speed.Y -= 15f;
+                    isJumping = true;
+
+                }
             }
+           
             
             if (keyboardState.IsKeyDown(Keys.Escape)){
                 isAlive = false;
             }
-            if (keyboardState.IsKeyDown(Keys.Z))
-            {
-                spritePath = content.Load<Texture2D>("images/player/attack");
-                numFrames = 4;
-                
-              
-                /* if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)
-                 {
-                     Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
-
-                     bullets.Add(temp);
-
-                     timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
-                 }*/
-
-            }
-            if (keyboardState.IsKeyDown(Keys.X)){
-                spritePath = content.Load<Texture2D>("images/player/attack2");
-                numFrames = 7;
-            }
+           
             foreach (Bullet b in bullets.ToList())
             {
                 b.Update();
@@ -145,6 +186,10 @@ namespace ExGame
             if (isJumping)
             {
                 speed.Y += GameElements.gravity;
+            }
+            if(points == 0)
+            {
+                isAlive = false;
             }
        
 
@@ -180,6 +225,23 @@ namespace ExGame
             vector.X = Math.Min(Math.Max(vector.X, 0), window.ClientBounds.Width-texture.Width);
             vector.Y = Math.Min(Math.Max(vector.Y, 0), window.ClientBounds.Height - texture.Height - 60);
 
+
+            switch (points)
+            {
+                case 1:
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
+                    break;
+                case 2:
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
+                    break;
+                case 3:
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
+                    break;
+                case 4:
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar");
+                    break;
+            }
+
         }
         public List<Bullet> Bullets
         {
@@ -193,7 +255,21 @@ namespace ExGame
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, vector, Color.White);
-            foreach(Bullet b in bullets)
+
+            switch (who)
+            {
+                case 1:
+                    spriteBatch.Draw(bulletTexture, new Vector2(10, 10), Color.White);
+                    spriteBatch.Draw(hp, new Vector2(24, 10), Color.White);
+                    break;
+                case 2:
+                    spriteBatch.Draw(bulletTexture, new Vector2(720, 10),Color.White);
+                    spriteBatch.Draw(hp, new Vector2(734, 10), Color.White);
+                    break;
+            }
+
+
+            foreach (Bullet b in bullets)
             {
                 b.Draw(spriteBatch);
             }
@@ -208,7 +284,7 @@ namespace ExGame
             speed.Y = speedY;
             bullets.Clear();
             timeSinceLastBullet = 0;
-            points = 0;
+            points = 4;
             isAlive = true;
             isJumping = false;
         }

@@ -152,7 +152,13 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.e
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runLeft.xnb
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\bar.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\falling.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack2.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_decoration.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart_animated_1.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_3.xnb

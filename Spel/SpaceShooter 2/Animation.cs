@@ -36,7 +36,6 @@ namespace SpaceShooter2
             this.frameTime = frameSpeed;
             frameWidth = (asset.Width / numOffFrames);
             frameHeight = (asset.Height);
-            position = new Vector2(380, 400);
         }
 
         public Vector2 Position

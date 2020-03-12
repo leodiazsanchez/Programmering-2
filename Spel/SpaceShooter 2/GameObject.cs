@@ -27,7 +27,10 @@ namespace ExGame
 
         public float X{ get {return vector.X;} }
         public float Y { get { return vector.Y; } }
-        public float Width { get { return texture.Width; } }
+        public float Width
+        {
+           get { return texture.Width; }
+        }
         public float Height { get { return texture.Height; } }
     }
 }
