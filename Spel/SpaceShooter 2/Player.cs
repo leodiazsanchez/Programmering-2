@@ -38,6 +38,7 @@ namespace ExGame
         public Vector2 Position
         {
             get { return this.vector; }
+            set { this.vector = value; }
         }
 
         public int Points
@@ -69,8 +70,6 @@ namespace ExGame
             get { return this.isAttacking; }
 
         }
-
-
 
         public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
@@ -119,23 +118,20 @@ namespace ExGame
 
                 }
 
-                if (keyboardState.IsKeyDown(Keys.Z))
+                if (keyboardState.IsKeyDown(Keys.Z) && gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 500)
                 {
                     spritePath = content.Load<Texture2D>("images/player/attack");
                     numFrames = 4;
+                    isAttacking = true;
+                    timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
 
-                    if (Board.HasBeenPressed(Keys.Z))
+                    /*if ()
                     {
                         isAttacking = true;
-                    }
-
-                    /*if (gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 1000)
-                    {
-                        isAttacking = true;
-                        timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
+                       
                     }*/
-            
-                
+
+
 
 
                     /* if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)

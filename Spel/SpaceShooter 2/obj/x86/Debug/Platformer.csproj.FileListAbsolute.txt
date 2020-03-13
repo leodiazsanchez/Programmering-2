@@ -146,7 +146,6 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CoreCompileInputs.cache
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
