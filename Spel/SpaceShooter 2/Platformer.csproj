@@ -47,6 +47,7 @@
     <Compile Include="GameElements.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Heart.cs" />
+    <Compile Include="Board.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuItem.cs" />
     <Compile Include="Mine.cs" />

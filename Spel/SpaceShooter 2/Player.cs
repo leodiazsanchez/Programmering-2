@@ -19,6 +19,7 @@ namespace ExGame
         private int points = 4;
         Texture2D spritePath;
         int numFrames;
+        bool isAttacking;
         int who;
         SpriteEffects rotation = SpriteEffects.None;
      
@@ -63,16 +64,24 @@ namespace ExGame
 
         }
 
+        public bool IsAttacking
+        {
+            get { return this.isAttacking; }
+
+        }
+
 
 
         public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
 
             KeyboardState keyboardState = Keyboard.GetState();
+            Board.GetState();
 
             //Default
             numFrames = 4;
             spritePath = content.Load<Texture2D>("images/player/idle");
+            isAttacking = false;
 
             if(who == 1)
             {
@@ -115,6 +124,19 @@ namespace ExGame
                     spritePath = content.Load<Texture2D>("images/player/attack");
                     numFrames = 4;
 
+                    if (Board.HasBeenPressed(Keys.Z))
+                    {
+                        isAttacking = true;
+                    }
+
+                    /*if (gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 1000)
+                    {
+                        isAttacking = true;
+                        timeSinceLastBullet = gameTime.TotalGameTime.TotalMilliseconds;
+                    }*/
+            
+                
+
 
                     /* if(gameTime.TotalGameTime.TotalMilliseconds > timeSinceLastBullet + 200)
                      {
@@ -131,6 +153,7 @@ namespace ExGame
                 {
                     spritePath = content.Load<Texture2D>("images/player/attack2");
                     numFrames = 7;
+                    isAttacking = true;
 
                 }
             } else if (who == 2)
@@ -157,6 +180,13 @@ namespace ExGame
                 {
                     numFrames = 4;
                     spritePath = content.Load<Texture2D>("images/player/idle");
+                }
+
+                if (keyboardState.IsKeyDown(Keys.RightControl))
+                {
+                    spritePath = content.Load<Texture2D>("images/player/attack");
+                    numFrames = 4;
+                    isAttacking = true;
                 }
 
 

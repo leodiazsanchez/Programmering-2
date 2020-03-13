@@ -59,7 +59,7 @@ namespace ExGame
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
             Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
 
-            for (int i = 0; i < 5; i++)
+            /*for (int i = 0; i < 5; i++)
             {
                 int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
@@ -73,7 +73,7 @@ namespace ExGame
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
                 Tripod temp = new Tripod(tmpSprite, rndX, rndY);
                 enemies.Add(temp);
-            }
+            }*/
             //heartSprite = content.Load<Texture2D>("images/powerups/coin");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
         }
@@ -96,11 +96,21 @@ namespace ExGame
             player.Update(window, gameTime, content);
             player2.Update(window, gameTime, content);
 
+            if (player.CheckCollision(player2) && player.IsAttacking)
+            {
+                player2.Points--;
+            }
+
+            if (player2.CheckCollision(player) && player2.IsAttacking)
+            {
+                player.Points--;
+            }
 
             foreach (Enemy e in enemies.ToList())
             {
                 foreach (Player p in players.ToList())
                 {
+                
 
                     foreach (Bullet b in p.Bullets)
                     {
@@ -233,7 +243,7 @@ namespace ExGame
             enemies.Clear();
             Random random = new Random();
             Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
-            for (int i = 0; i < 5; i++)
+            /*for (int i = 0; i < 5; i++)
             {
                 int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
@@ -248,7 +258,7 @@ namespace ExGame
                 int rndY = random.Next(0, window.ClientBounds.Height / 2);
                 Tripod temp = new Tripod(tmpSprite, rndX, rndY);
                 enemies.Add(temp);
-            }
+            }*/
         }
     }
 }

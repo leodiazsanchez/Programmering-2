@@ -162,3 +162,14 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_3.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart_animated_1.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_3.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_decoration.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack2.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\falling.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
