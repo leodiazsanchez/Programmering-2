@@ -25,6 +25,7 @@ namespace ExGame
         static PrintText printText;
         static Menu menu;
         static Background background;
+        static int round = 1;
 
 
         //Krafter och liknande
@@ -96,37 +97,37 @@ namespace ExGame
             player.Update(window, gameTime, content);
             player2.Update(window, gameTime, content);
 
+
             if (player.CheckCollision(player2) && player.IsAttacking)
             {
-                player2.Points--;
+                player2.Health--;
             }
 
             if (player2.CheckCollision(player) && player2.IsAttacking)
             {
-                player.Points--;
+                player.Health--;
             }
 
             foreach (Enemy e in enemies.ToList())
             {
                 foreach (Player p in players.ToList())
                 {
-                
 
                     foreach (Bullet b in p.Bullets)
                     {
                         if (e.CheckCollision(b))
                         {
                             e.IsAlive = false;
-                            p.Points++;
+                            p.Health++;
                         }
                     }
                     if (e.IsAlive)
                     {
                         if (e.CheckCollision(p))
                         {
-                            p.Points--;
+                            p.Health--;
                             e.IsAlive = false;
-                            if (p.Points == 0)
+                            if (p.Health == 0)
                             {
 
                                 p.IsAlive = false;
@@ -164,9 +165,9 @@ namespace ExGame
                         if (h.CheckCollision(p))
                         {
                             hearts.Remove(h);
-                            if (p.Points < 4)
+                            if (p.Health < 4)
                             {
-                                p.Points++;
+                                p.Health++;
                             }
 
                         }
@@ -179,6 +180,12 @@ namespace ExGame
                     if (!p.IsAlive)
                     {
                         Reset(window, content);
+                        round++;
+                    }
+
+                    if(round == 4)
+                    {
+                        round = 1;
                         return State.Menu;
                     }
                 }
@@ -220,7 +227,7 @@ namespace ExGame
             {
                 h.Draw(spriteBatch);
             }
-            //printText.Print("HP:" + player.Points, spriteBatch, 0, 50);
+            printText.Print(round.ToString(), spriteBatch, 400, 10);
    
         }
 
@@ -241,6 +248,7 @@ namespace ExGame
             player.Reset(200, 150, 2f, 4.5f);
             player2.Reset(600, 150, 2f, 4.5f);
             enemies.Clear();
+            hearts.Clear();
             Random random = new Random();
             Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
             /*for (int i = 0; i < 5; i++)
