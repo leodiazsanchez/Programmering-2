@@ -9,8 +9,8 @@
     <ProjectGuid>{EBE20FCA-3D4E-4FC4-B655-592BC0E5160D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpaceShooter2</RootNamespace>
-    <AssemblyName>SpaceShooter2</AssemblyName>
+    <RootNamespace>Brawl</RootNamespace>
+    <AssemblyName>Brawl</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>

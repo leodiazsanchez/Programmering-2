@@ -127,8 +127,6 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\Background.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.exe
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.pdb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
@@ -147,16 +145,12 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runLeft.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\falling.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack2.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart.xnb
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar.xnb
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_decoration.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart_animated_1.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
@@ -174,3 +168,9 @@ I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Sp
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\playerhp.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_4.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_5.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Brawl.exe
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Brawl.pdb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.exe
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.pdb

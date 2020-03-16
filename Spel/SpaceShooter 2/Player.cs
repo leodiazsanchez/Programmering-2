@@ -16,25 +16,27 @@ namespace ExGame
         List<Bullet> bullets;
         Texture2D bulletTexture, hp;
         double timeSinceLastBullet = 0;
-        private int health = 4;
+        int health = 5;
+        int lives;
         Texture2D spritePath;
         int numFrames;
         bool isAttacking;
         int who;
+   
         SpriteEffects rotation = SpriteEffects.None;
         Vector2 position;
         Vector2 velocity;
         readonly Vector2 gravity = new Vector2(0, -9.8f);
 
 
-        public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, Texture2D hp, int who, ContentManager content) : base(texture, X, Y, speedX, speedY )
+        public Player(Texture2D texture, float X, float Y, float speedX, float speedY, int who, ContentManager content) : base(texture, X, Y, speedX, speedY )
         {
             bullets = new List<Bullet>();
-            this.hp = hp;
             this.who = who;
-            this.bulletTexture = bulletTexture;
             numFrames = 4;
+            lives = 3;
             spritePath = content.Load<Texture2D>("images/player/idle");
+            hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
             isJumping = false;
         }
 
@@ -53,6 +55,12 @@ namespace ExGame
         {
             get { return health; }
             set { health = value; }
+        }
+
+        public int Lives
+        {
+            get { return lives; }
+            set { lives = value; }
         }
 
         public Texture2D SpritePath
@@ -223,6 +231,10 @@ namespace ExGame
             }
             if(health == 0)
             {
+                lives--;
+            }
+            if(lives == 0)
+            {
                 isAlive = false;
             }
        
@@ -272,7 +284,10 @@ namespace ExGame
                     hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
                     break;
                 case 4:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
+                    break;
+                default:
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
                     break;
             }
 
@@ -295,6 +310,7 @@ namespace ExGame
                 case 1:
                     //spriteBatch.Draw(bulletTexture, new Vector2(10, 10), Color.White);
                     spriteBatch.Draw(hp, new Vector2(10, 10), Color.White);
+                    
                     break;
                 case 2:
                     //spriteBatch.Draw(bulletTexture, new Vector2(720, 10),Color.White);
@@ -318,7 +334,7 @@ namespace ExGame
             speed.Y = speedY;
             bullets.Clear();
             timeSinceLastBullet = 0;
-            health = 4;
+            health = 5;
             isAlive = true;
             isJumping = false;
         }

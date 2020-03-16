@@ -157,7 +157,7 @@
 /processorParam:TextureFormat=Color
 /build:images/player/falling.png
 
-#begin images/player/HP/health_bar.png
+#begin images/player/HP/health_bar_1.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -167,7 +167,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:images/player/HP/health_bar.png
+/build:images/player/HP/health_bar_1.png
 
 #begin images/player/HP/health_bar_1.png
 /importer:TextureImporter
@@ -193,6 +193,18 @@
 /processorParam:TextureFormat=Color
 /build:images/player/HP/health_bar_2.png
 
+#begin images/player/HP/health_bar_2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/HP/health_bar_2.png
+
 #begin images/player/HP/health_bar_3.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -205,7 +217,7 @@
 /processorParam:TextureFormat=Color
 /build:images/player/HP/health_bar_3.png
 
-#begin images/player/HP/health_bar_decoration.png
+#begin images/player/HP/health_bar_3.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -215,7 +227,31 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:images/player/HP/health_bar_decoration.png
+/build:images/player/HP/health_bar_3.png
+
+#begin images/player/HP/health_bar_4.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/HP/health_bar_4.png
+
+#begin images/player/HP/health_bar_5.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/HP/health_bar_5.png
 
 #begin images/player/idle.png
 /importer:TextureImporter

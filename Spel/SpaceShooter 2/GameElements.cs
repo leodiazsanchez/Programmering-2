@@ -26,7 +26,6 @@ namespace ExGame
         static PrintText printText;
         static Menu menu;
         static Background background;
-        static int round = 1;
 
 
         //Krafter och liknande
@@ -47,8 +46,8 @@ namespace ExGame
             menu.AddItem(content.Load<Texture2D>("images/menu/start"), (int)State.Run);
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
-            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"), 1, content);
-            player2 = new Player(content.Load<Texture2D>("images/player/placeholder"), 600, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"), 2, content);
+            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2f, 4.5f, 1, content);
+            player2 = new Player(content.Load<Texture2D>("images/player/placeholder"), 600, 150, 2f, 4.5f, 2, content);
             playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player.NumFrames, true);
             player2anim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player2.NumFrames, true);
             background = new Background(content.Load<Texture2D>("images/background"), window);
@@ -121,10 +120,14 @@ namespace ExGame
 
                 foreach(Player p in players.ToList())
                 {
-                    if (p.CheckCollision(t))
+                    if (p.CheckCollision(t) && p.Y > t.Height)
                     {
                         p.SpeedY = 0f;
                         gravity = 0f;
+                    }
+                    else
+                    {
+                        gravity = 0.5f;
                     }
              
                 }
@@ -142,7 +145,7 @@ namespace ExGame
                         if (e.CheckCollision(b))
                         {
                             e.IsAlive = false;
-                            p.Health++;
+                            p.Health--;
                         }
                     }
 
@@ -193,7 +196,7 @@ namespace ExGame
                         if (h.CheckCollision(p))
                         {
                             hearts.Remove(h);
-                            if (p.Health < 4)
+                            if (p.Health < 5)
                             {
                                 p.Health++;
                             }
@@ -205,17 +208,20 @@ namespace ExGame
                         hearts.Remove(h);
                     }
 
-                    if (!p.IsAlive)
+                    if (p.Lives == 0)
+                    {
+                        p.Lives = 3;
+                        Reset(window, content);
+                        return State.Menu;
+
+                    }
+                    if (p.Health == 0 && p.Lives > 0)
                     {
                         Reset(window, content);
-                        round++;
+                        p.Lives--;
+
                     }
 
-                    if (round == 4)
-                    {
-                        round = 1;
-                        return State.Menu;
-                    }
                 }
 
             }
@@ -260,7 +266,8 @@ namespace ExGame
             {
                 h.Draw(spriteBatch);
             }
-            printText.Print(round.ToString(), spriteBatch, 400, 10);
+            printText.Print(player.Lives.ToString(), spriteBatch, 30, 25);
+            printText.Print(player2.Lives.ToString(), spriteBatch, 780, 25);
 
         }
 
