@@ -172,3 +172,5 @@ I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Sp
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack2.xnb
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\falling.xnb
 I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\playerhp.xnb

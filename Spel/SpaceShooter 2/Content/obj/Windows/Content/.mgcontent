@@ -11,6 +11,7 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/exit.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/start.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile.jpg</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/adventurer-Sheet.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack2.png</File>
@@ -27,8 +28,11 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart_animated_1.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/myFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

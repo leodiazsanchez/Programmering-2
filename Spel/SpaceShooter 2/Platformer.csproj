@@ -53,6 +53,7 @@
     <Compile Include="Mine.cs" />
     <Compile Include="MovingObject.cs" />
     <Compile Include="PhysicalObject.cs" />
+    <Compile Include="Platform.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PrintText.cs" />
     <Compile Include="Program.cs" />

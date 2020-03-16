@@ -20,6 +20,7 @@ namespace ExGame
         static List<Heart> hearts;
         static List<Enemy> enemies;
         static List<Player> players;
+        static List<Platform> tiles;
         static List<Animation> animations;
         static Texture2D heartSprite;
         static PrintText printText;
@@ -32,7 +33,7 @@ namespace ExGame
         static public float gravity = 0.5f;
         static public float xFriktion = 1f;
 
-        public enum State { Menu,Run,HighScore,Quit};
+        public enum State { Menu, Run, HighScore, Quit };
         public static State currentState;
 
         public static void Initialize()
@@ -46,9 +47,9 @@ namespace ExGame
             menu.AddItem(content.Load<Texture2D>("images/menu/start"), (int)State.Run);
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
-            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"),1, content);
-            player2 = new Player(content.Load<Texture2D>("images/player/placeholder"), 600, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"),2, content);
-            playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"),200f, player.NumFrames, true);
+            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"), 1, content);
+            player2 = new Player(content.Load<Texture2D>("images/player/placeholder"), 600, 150, 2f, 4.5f, content.Load<Texture2D>("images/player/hp/health_bar_decoration"), content.Load<Texture2D>("images/player/hp/health_bar"), 2, content);
+            playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player.NumFrames, true);
             player2anim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player2.NumFrames, true);
             background = new Background(content.Load<Texture2D>("images/background"), window);
             players = new List<Player>();
@@ -56,6 +57,11 @@ namespace ExGame
             players.Add(player2);
             enemies = new List<Enemy>();
             hearts = new List<Heart>();
+            tiles = new List<Platform>();
+            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 400, 300, 0f, 0f));
+            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 416, 300, 0f, 0f));
+            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 432, 300, 0f, 0f));
+            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 448, 300, 0f, 0f));
             Random random = new Random();
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
             Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
@@ -98,6 +104,7 @@ namespace ExGame
             player2.Update(window, gameTime, content);
 
 
+
             if (player.CheckCollision(player2) && player.IsAttacking)
             {
                 player2.Health--;
@@ -106,6 +113,23 @@ namespace ExGame
             if (player2.CheckCollision(player) && player2.IsAttacking)
             {
                 player.Health--;
+            }
+
+            foreach (Platform t in tiles.ToList())
+            {
+                t.Update(window, gameTime, content);
+
+                foreach(Player p in players.ToList())
+                {
+                    if (p.CheckCollision(t))
+                    {
+                        p.SpeedY = 0f;
+                        gravity = 0f;
+                    }
+             
+                }
+          
+                
             }
 
             foreach (Enemy e in enemies.ToList())
@@ -121,6 +145,7 @@ namespace ExGame
                             p.Health++;
                         }
                     }
+
                     if (e.IsAlive)
                     {
                         if (e.CheckCollision(p))
@@ -140,18 +165,21 @@ namespace ExGame
 
                     else enemies.Remove(e);
                 }
-                
+
 
             }
 
+
+           
 
             Random random = new Random();
             int newHeart = random.Next(1, 200);
             if (newHeart == 1)
             {
                 int rndX = random.Next(0, window.ClientBounds.Width - heartSprite.Width);
-                int rndY = window.ClientBounds.Height - heartSprite.Height-52;
+                int rndY = window.ClientBounds.Height - heartSprite.Height - 52;
                 hearts.Add(new Heart(heartSprite, rndX, rndY, gameTime));
+            
             }
 
             foreach (Heart h in hearts.ToList())
@@ -183,17 +211,17 @@ namespace ExGame
                         round++;
                     }
 
-                    if(round == 4)
+                    if (round == 4)
                     {
                         round = 1;
                         return State.Menu;
                     }
                 }
-                
+
             }
 
 
-            playeranim.Position = player.Position;     
+            playeranim.Position = player.Position;
             playeranim.Asset = player.SpritePath;
             playeranim.Rotation = player.Rotation;
             playeranim.NumOffFrames = player.NumFrames;
@@ -211,6 +239,11 @@ namespace ExGame
         public static void RunDraw(SpriteBatch spriteBatch)
         {
             background.Draw(spriteBatch);
+
+            foreach (Platform t in tiles.ToList())
+            {
+                t.Draw(spriteBatch);
+            }
             foreach (Player p in players.ToList())
             {
                 p.Draw(spriteBatch);
@@ -228,7 +261,7 @@ namespace ExGame
                 h.Draw(spriteBatch);
             }
             printText.Print(round.ToString(), spriteBatch, 400, 10);
-   
+
         }
 
         public static State HighScoreUpdate()

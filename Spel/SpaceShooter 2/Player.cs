@@ -22,7 +22,10 @@ namespace ExGame
         bool isAttacking;
         int who;
         SpriteEffects rotation = SpriteEffects.None;
-     
+        Vector2 position;
+        Vector2 velocity;
+        readonly Vector2 gravity = new Vector2(0, -9.8f);
+
 
         public Player(Texture2D texture, float X, float Y, float speedX, float speedY,Texture2D bulletTexture, Texture2D hp, int who, ContentManager content) : base(texture, X, Y, speedX, speedY )
         {
@@ -58,6 +61,12 @@ namespace ExGame
             
         }
 
+        public float SpeedY
+        {
+            get { return this.speed.Y; }
+            set { this.speed.Y = value; }
+        }
+
         public SpriteEffects Rotation
         {
             get { return this.rotation; }
@@ -81,6 +90,9 @@ namespace ExGame
 
             KeyboardState keyboardState = Keyboard.GetState();
             Board.GetState();
+            float time = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            velocity += gravity * time;
+            position += velocity * time;
 
             //Default
             numFrames = 4;
@@ -281,12 +293,12 @@ namespace ExGame
             switch (who)
             {
                 case 1:
-                    spriteBatch.Draw(bulletTexture, new Vector2(10, 10), Color.White);
-                    spriteBatch.Draw(hp, new Vector2(24, 10), Color.White);
+                    //spriteBatch.Draw(bulletTexture, new Vector2(10, 10), Color.White);
+                    spriteBatch.Draw(hp, new Vector2(10, 10), Color.White);
                     break;
                 case 2:
-                    spriteBatch.Draw(bulletTexture, new Vector2(720, 10),Color.White);
-                    spriteBatch.Draw(hp, new Vector2(734, 10), Color.White);
+                    //spriteBatch.Draw(bulletTexture, new Vector2(720, 10),Color.White);
+                    spriteBatch.Draw(hp, new Vector2(758, 10), Color.White);
                     break;
             }
 

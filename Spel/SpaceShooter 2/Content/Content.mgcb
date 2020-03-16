@@ -97,6 +97,18 @@
 /processorParam:TextureFormat=Color
 /build:images/menu/start.png
 
+#begin images/platform/tile.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/platform/tile.jpg
+
 #begin images/player/adventurer-Sheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
