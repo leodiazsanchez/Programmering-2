@@ -42,7 +42,7 @@
     <Compile Include="Background.cs" />
     <Compile Include="BackgroundSprite.cs" />
     <Compile Include="Bullet.cs" />
-    <Compile Include="Enemy.cs" />
+    <Compile Include="Enemies\Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements.cs" />
     <Compile Include="GameObject.cs" />
@@ -50,15 +50,18 @@
     <Compile Include="Board.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuItem.cs" />
-    <Compile Include="Mine.cs" />
+    <Compile Include="Enemies\Mine.cs" />
     <Compile Include="MovingObject.cs" />
     <Compile Include="PhysicalObject.cs" />
     <Compile Include="Platform.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Players\Player.cs" />
+    <Compile Include="Players\Player1.cs" />
+    <Compile Include="Players\Player2.cs" />
+    <Compile Include="Players\Players.cs" />
     <Compile Include="PrintText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tripod.cs" />
+    <Compile Include="Enemies\Bird.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

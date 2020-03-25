@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpaceShooter2
+namespace Brawl
 {
     public class Animation
     {
@@ -98,7 +98,7 @@ namespace SpaceShooter2
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1.4f, rotation, 0f);
+            spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1f, rotation, 0f);
         }
     }
 }

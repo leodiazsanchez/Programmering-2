@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExGame
+namespace Brawl
 {
 #if WINDOWS || LINUX
     /// <summary>

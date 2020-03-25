@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ExGame
+namespace Brawl
 {
     /// <summary>
     /// This is the main type for your game.

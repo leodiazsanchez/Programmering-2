@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Input;
 
-namespace SpaceShooter2
+namespace Brawl
 {
     public class Board
     {
         static KeyboardState currentKeyState;
         static KeyboardState previousKeyState;
+        static int timespressed;
 
         public static KeyboardState GetState()
         {
@@ -24,9 +25,9 @@ namespace SpaceShooter2
             return currentKeyState.IsKeyDown(key);
         }
 
-        public static bool HasBeenPressed(Keys key)
+        public static bool HasBeenPressed(Keys key, int timespressed)
         {
-            return currentKeyState.IsKeyDown(key) && !previousKeyState.IsKeyDown(key);
+            return currentKeyState.IsKeyDown(key) && !previousKeyState.IsKeyDown(key) && timespressed < 2;
         }
     }
 }

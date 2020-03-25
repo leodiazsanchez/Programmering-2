@@ -5,26 +5,26 @@
   <Config />
   <SourceFiles>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/background.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/bird.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/mine.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/tripod.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/exit.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/start.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile.jpg</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/adventurer-Sheet.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/attack2.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/falling.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile2.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile3.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile4.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile5.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile6.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_1.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_2.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_3.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_4.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_5.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/idle.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/jump.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/placeholder.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/run.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/player1.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/player2.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart_animated_1.png</File>

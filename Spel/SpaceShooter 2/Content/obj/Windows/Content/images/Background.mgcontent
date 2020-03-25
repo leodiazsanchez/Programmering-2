@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/background.png</SourceFile>
-  <SourceTime>2020-03-10T18:48:21.7659231+01:00</SourceTime>
+  <SourceTime>2017-09-19T13:21:40+02:00</SourceTime>
   <DestFile>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/bin/Windows/Content/images/background.xnb</DestFile>
-  <DestTime>2020-03-13T22:52:45.3336984+01:00</DestTime>
+  <DestTime>2020-03-25T00:23:18.0641094+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

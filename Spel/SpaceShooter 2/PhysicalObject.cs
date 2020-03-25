@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExGame
+namespace Brawl
 {
     abstract class PhysicalObject : MovingObject
     {
@@ -29,14 +29,5 @@ namespace ExGame
             get { return isAlive; }
             set { isAlive = value; }
         }
-
-        public bool IsJumping
-        {
-            get { return isJumping; }
-            set { isJumping = value; }
-        }
-
-
-
     }
 }

@@ -1,29 +1,27 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Brawl;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using SpaceShooter2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExGame
+namespace Brawl
 {
     static class GameElements
     {
-        static Texture2D menuSprite;
+        static Texture2D menuSprite, heartSprite, birdSprite;
         static Vector2 menuPos;
-        static Player player, player2;
-        static Animation playeranim, player2anim;
         static List<Heart> hearts;
         static List<Enemy> enemies;
-        static List<Player> players;
-        static List<Platform> tiles;
-        static List<Animation> animations;
-        static Texture2D heartSprite;
+        static List<Players> players;
+        public static List<Platform> tiles;
         static PrintText printText;
+        static int spawnX;
+        static Platform platform;
         static Menu menu;
         static Background background;
 
@@ -37,7 +35,7 @@ namespace ExGame
 
         public static void Initialize()
         {
-            hearts = new List<Heart>();
+
         }
 
         public static void LoadContent(ContentManager content, GameWindow window)
@@ -46,41 +44,53 @@ namespace ExGame
             menu.AddItem(content.Load<Texture2D>("images/menu/start"), (int)State.Run);
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
-            player = new Player(content.Load<Texture2D>("images/player/placeholder"), 200, 150, 2f, 4.5f, 1, content);
-            player2 = new Player(content.Load<Texture2D>("images/player/placeholder"), 600, 150, 2f, 4.5f, 2, content);
-            playeranim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player.NumFrames, true);
-            player2anim = new Animation(content, content.Load<Texture2D>("images/player/idle"), 200f, player2.NumFrames, true);
             background = new Background(content.Load<Texture2D>("images/background"), window);
-            players = new List<Player>();
-            players.Add(player);
-            players.Add(player2);
+            players = new List<Players>();
+            players.Add(new Player1(content.Load<Texture2D>("images/player/player1"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            players.Add(new Player2(content.Load<Texture2D>("images/player2/player2"), 600, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            tiles = new List<Platform>();
+            for (int i = 100; i < 300; i+= 16)
+            {
+                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, 350, 0f, 0f));
+            }
+
+            for (int i = 400; i < 600; i += 16)
+            {
+                if (i == 400)
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile3"), i, 250, 0f, 0f));
+                }
+                else
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, 250, 0f, 0f));
+                }
+          
+            }
+
+            for (int i = 100; i < 700; i += 16)
+            {   
+               if(i== 100)
+               {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile4"), i, window.ClientBounds.Height - 16, 0f, 0f));
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile3"), i, window.ClientBounds.Height - 32, 0f, 0f));
+               }
+               else if (i == 692)
+               {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile6"), i, window.ClientBounds.Height - 16, 0f, 0f));
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile5"), i, window.ClientBounds.Height - 32, 0f, 0f));
+               }
+               else
+               {
+                   tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, window.ClientBounds.Height - 32, 0f, 0f));
+                   tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile2"), i, window.ClientBounds.Height - 16, 0f, 0f));
+               }
+
+            }
+            Random random = new Random();
             enemies = new List<Enemy>();
             hearts = new List<Heart>();
-            tiles = new List<Platform>();
-            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 400, 300, 0f, 0f));
-            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 416, 300, 0f, 0f));
-            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 432, 300, 0f, 0f));
-            tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), 448, 300, 0f, 0f));
-            Random random = new Random();
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
-            Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
-
-            /*for (int i = 0; i < 5; i++)
-            {
-                int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = random.Next(0, window.ClientBounds.Height / 2);
-                Mine temp = new Mine(tmpSprite, rndX, rndY);
-                enemies.Add(temp);
-            }
-            tmpSprite = content.Load<Texture2D>("images/enemies/tripod");
-            for (int i = 0; i < 5; i++)
-            {
-                int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = random.Next(0, window.ClientBounds.Height / 2);
-                Tripod temp = new Tripod(tmpSprite, rndX, rndY);
-                enemies.Add(temp);
-            }*/
-            //heartSprite = content.Load<Texture2D>("images/powerups/coin");
+            birdSprite = content.Load<Texture2D>("images/enemies/bird");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
         }
 
@@ -99,145 +109,86 @@ namespace ExGame
         public static State RunUpdate(ContentManager content, GameWindow window, GameTime gameTime)
         {
             background.Update(window);
-            player.Update(window, gameTime, content);
-            player2.Update(window, gameTime, content);
-
-
-
-            if (player.CheckCollision(player2) && player.IsAttacking)
-            {
-                player2.Health--;
-            }
-
-            if (player2.CheckCollision(player) && player2.IsAttacking)
-            {
-                player.Health--;
-            }
-
-            foreach (Platform t in tiles.ToList())
-            {
-                t.Update(window, gameTime, content);
-
-                foreach(Player p in players.ToList())
-                {
-                    if (p.CheckCollision(t) && p.Y > t.Height)
-                    {
-                        p.SpeedY = 0f;
-                        gravity = 0f;
-                    }
-                    else
-                    {
-                        gravity = 0.5f;
-                    }
-             
-                }
-          
-                
-            }
-
-            foreach (Enemy e in enemies.ToList())
-            {
-                foreach (Player p in players.ToList())
-                {
-
-                    foreach (Bullet b in p.Bullets)
-                    {
-                        if (e.CheckCollision(b))
-                        {
-                            e.IsAlive = false;
-                            p.Health--;
-                        }
-                    }
-
-                    if (e.IsAlive)
-                    {
-                        if (e.CheckCollision(p))
-                        {
-                            p.Health--;
-                            e.IsAlive = false;
-                            if (p.Health == 0)
-                            {
-
-                                p.IsAlive = false;
-                            }
-                        }
-
-                        e.Update(window);
-                    }
-
-
-                    else enemies.Remove(e);
-                }
-
-
-            }
-
-
-           
 
             Random random = new Random();
             int newHeart = random.Next(1, 200);
-            if (newHeart == 1)
+  
+            if(newHeart == 2)
             {
-                int rndX = random.Next(0, window.ClientBounds.Width - heartSprite.Width);
-                int rndY = window.ClientBounds.Height - heartSprite.Height - 52;
-                hearts.Add(new Heart(heartSprite, rndX, rndY, gameTime));
-            
+               
+                int direction = random.Next(1, 3);
+                if(direction == 1)
+                {
+                    spawnX = -birdSprite.Width;
+                }
+                else if (direction == 2)
+                {
+                    spawnX = window.ClientBounds.Width-birdSprite.Width;
+                }           
+                int rndY = random.Next(window.ClientBounds.Height / 3 , window.ClientBounds.Height);
+                Bird bird = new Bird(birdSprite, spawnX, rndY, direction);
+                enemies.Add(bird);
             }
 
-            foreach (Heart h in hearts.ToList())
+            players[1].Damage(players[0]);
+            players[0].Damage(players[1]);
+
+            foreach (Players p in players.ToList())
             {
-                foreach (Player p in players.ToList())
+                p.Update(window, gameTime, content);
+         
+                if (!p.IsAlive)
                 {
+                    Reset(window, content);
+                    return State.Menu;
+                }
+
+                foreach (Enemy e in enemies.ToList())
+                {
+                    e.Update(window);
+                    if (e.CheckCollision(p) && !e.Hit)
+                    {
+                        p.Health--;
+                        e.Hit = true;
+                    }
+                }
+
+                foreach (Heart h in hearts.ToList())
+                {
+                    h.Update(gameTime);
                     if (h.IsAlive)
                     {
-                        h.Update(gameTime);
-
-                        if (h.CheckCollision(p))
+                        if (p.CheckCollision(h))
                         {
                             hearts.Remove(h);
-                            if (p.Health < 5)
-                            {
+                            if(p.Health < 5) 
                                 p.Health++;
-                            }
-
                         }
                     }
                     else
                     {
                         hearts.Remove(h);
-                    }
-
-                    if (p.Lives == 0)
-                    {
-                        p.Lives = 3;
-                        Reset(window, content);
-                        return State.Menu;
-
-                    }
-                    if (p.Health == 0 && p.Lives > 0)
-                    {
-                        Reset(window, content);
-                        p.Lives--;
-
-                    }
-
+                    }                
                 }
 
+                foreach(Platform t in tiles.ToList())
+                {
+                    if (t.CheckHitbox(p) && p.SpeedY >= 0)
+                    {
+                        p.SpeedY = 0f;
+                        p.Timespressed = 0;
+                    }
+
+                   /* if (newHeart == 1)
+                    {
+                        int rndX = (int)t.X;
+                        int rndY = (int)t.Y - heartSprite.Height;
+                        hearts.Add(new Heart(heartSprite, rndX, rndY, gameTime));
+                    }*/
+
+                }
+            
             }
-
-
-            playeranim.Position = player.Position;
-            playeranim.Asset = player.SpritePath;
-            playeranim.Rotation = player.Rotation;
-            playeranim.NumOffFrames = player.NumFrames;
-            playeranim.PlayAnim(gameTime);
-
-            player2anim.Position = player2.Position;
-            player2anim.Asset = player2.SpritePath;
-            player2anim.Rotation = player2.Rotation;
-            player2anim.NumOffFrames = player2.NumFrames;
-            player2anim.PlayAnim(gameTime);
 
             return State.Run;
         }
@@ -250,24 +201,21 @@ namespace ExGame
             {
                 t.Draw(spriteBatch);
             }
-            foreach (Player p in players.ToList())
+            foreach (Players p in players.ToList())
             {
                 p.Draw(spriteBatch);
             }
-
-            playeranim.Draw(spriteBatch);
-            player2anim.Draw(spriteBatch);
-
             foreach (Enemy e in enemies)
             {
                 e.Draw(spriteBatch);
+
             }
             foreach (Heart h in hearts)
             {
                 h.Draw(spriteBatch);
             }
-            printText.Print(player.Lives.ToString(), spriteBatch, 30, 25);
-            printText.Print(player2.Lives.ToString(), spriteBatch, 780, 25);
+            printText.Print(players[0].Lives.ToString(), spriteBatch, 35, 25);
+            printText.Print(players[1].Lives.ToString(), spriteBatch, 780, 25);
 
         }
 
@@ -285,28 +233,15 @@ namespace ExGame
 
         private static void Reset(GameWindow window, ContentManager content)
         {
-            player.Reset(200, 150, 2f, 4.5f);
-            player2.Reset(600, 150, 2f, 4.5f);
+ 
+            foreach(Players p in players.ToList())
+            {
+                p.Reset(5f, 0f);
+            }
             enemies.Clear();
             hearts.Clear();
             Random random = new Random();
-            Texture2D tmpSprite = content.Load<Texture2D>("images/enemies/mine");
-            /*for (int i = 0; i < 5; i++)
-            {
-                int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = random.Next(0, window.ClientBounds.Height / 2);
-                Mine temp = new Mine(tmpSprite, rndX, rndY);
-                enemies.Add(temp);
-            }
 
-            tmpSprite = content.Load<Texture2D>("images/enemies/tripod");
-            for (int i = 0; i < 5; i++)
-            {
-                int rndX = random.Next(0, window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = random.Next(0, window.ClientBounds.Height / 2);
-                Tripod temp = new Tripod(tmpSprite, rndX, rndY);
-                enemies.Add(temp);
-            }*/
         }
     }
 }
