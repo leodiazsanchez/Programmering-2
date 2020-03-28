@@ -38,10 +38,9 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Animation.cs" />
+    <Compile Include="Old\Animation.cs" />
     <Compile Include="Background.cs" />
-    <Compile Include="BackgroundSprite.cs" />
-    <Compile Include="Bullet.cs" />
+    <Compile Include="Old\Bullet.cs" />
     <Compile Include="Enemies\Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements.cs" />
@@ -54,7 +53,7 @@
     <Compile Include="MovingObject.cs" />
     <Compile Include="PhysicalObject.cs" />
     <Compile Include="Platform.cs" />
-    <Compile Include="Players\Player.cs" />
+    <Compile Include="Old\Player.cs" />
     <Compile Include="Players\Player1.cs" />
     <Compile Include="Players\Player2.cs" />
     <Compile Include="Players\Players.cs" />

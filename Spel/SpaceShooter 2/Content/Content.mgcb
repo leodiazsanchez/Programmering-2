@@ -181,6 +181,18 @@
 /processorParam:TextureFormat=Color
 /build:images/platform/tile6.png
 
+#begin images/player/attack.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/player/attack.png
+
 #begin images/player/HP/health_bar_1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -241,7 +253,7 @@
 /processorParam:TextureFormat=Color
 /build:images/player/HP/health_bar_5.png
 
-#begin images/player/player1.png
+#begin images/player/idle.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -251,7 +263,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:images/player/player1.png
+/build:images/player/idle.png
 
 #begin images/player2/player2.png
 /importer:TextureImporter

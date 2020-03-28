@@ -25,9 +25,9 @@ namespace Brawl
             return currentKeyState.IsKeyDown(key);
         }
 
-        public static bool HasBeenPressed(Keys key, int timespressed)
+        public static bool HasBeenPressed(Keys key)
         {
-            return currentKeyState.IsKeyDown(key) && !previousKeyState.IsKeyDown(key) && timespressed < 2;
+            return currentKeyState.IsKeyDown(key) && !previousKeyState.IsKeyDown(key);
         }
     }
 }

@@ -12,104 +12,53 @@ namespace Brawl
 {
     class Player1 : Players
     {
-        float speedX, speedY;
         public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;
-            this.speedX = speedX;
-            this.speedY = speedY;
             Who = 1;
         }
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
+            base.Update(window, gameTime, content);
             Board.GetState();
-            KeyboardState keystate = Keyboard.GetState();
-            IsAttacking = false;
-            if (vector.Y == window.ClientBounds.Height - texture.Height)
+            texture = content.Load<Texture2D>("images/player/idle");
+            if (Board.HasBeenPressed(Keys.Z))
             {
-                Timespressed = 0;
+                IsAttacking = true;
+                texture = content.Load<Texture2D>("images/player/attack");
+               
             }
-            if (keystate.IsKeyDown(Keys.D))
+
+            if (Board.IsPressed(Keys.D))
             {
                 vector.X += speed.X;
                 Rotation = SpriteEffects.None;
-                
+
             }
-
-
-            if (keystate.IsKeyDown(Keys.A))
+            if (Board.IsPressed(Keys.A))
             {
                 vector.X -= speed.X;
                 Rotation = SpriteEffects.FlipHorizontally;
             }
 
 
-            if (Board.HasBeenPressed(Keys.W, Timespressed))
+            if (Board.HasBeenPressed(Keys.W) && Timespressed < 2)
             {
                 speed.Y = -8f;
                 Timespressed++;
-
             }
+            
 
-            if (Board.HasBeenPressed(Keys.Z,Timespressed))
-            {
-                IsAttacking = true;
-            }
-
-            if (Health == 0)
-            {
-                Lives--;
-                Health = 5;
-                Reset(speedX, speedY);
-            }
-
-            if (Lives == 0)
-            {
-                isAlive = false;
-            }
-
-            switch (Health)
-            {
-                case 1:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
-                    break;
-                case 2:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
-                    break;
-                case 3:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
-                    break;
-                case 4:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
-                    break;
-                default:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
-                    break;
-            }
-            if(vector.Y > window.ClientBounds.Height)
-            {
-                Health = 0;
-            }
-            vector.Y += speed.Y;
-            speed.Y += 0.5f;
-            vector.X = Math.Min(Math.Max(vector.X, 0), window.ClientBounds.Width-texture.Width);
-
-        }
+        } 
 
         public override void Reset(float speedX, float speedY)
         {
+            base.Reset(speedX,speedY);
             vector.X = 200f;
             vector.Y = 200f;
-            speed.X = speedX;
-            speed.Y = speedY;
-            Health = 5;
-            if(Lives == 0)
-            {
-                Lives = 3;
-            }
-            isAlive = true;
-            IsAttacking = false;
+
         }
+
     }
 }

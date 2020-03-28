@@ -12,6 +12,7 @@ namespace Brawl
     {
         SpriteEffects rotation = SpriteEffects.None;
         int direction = 1;
+        bool hit = false;
         public Bird(Texture2D texture, float X, float Y, int direction) : base(texture, X, Y, 4.5f, 3f)
         {
             this.direction = direction;
@@ -24,16 +25,30 @@ namespace Brawl
                 case 1:
                     rotation = SpriteEffects.None;
                     vector.X += speed.X;
+                    if (vector.X > window.ClientBounds.Width)
+                    {
+                        isAlive = false;
+                    }
                     break;
                 case 2:
                     rotation = SpriteEffects.FlipHorizontally;
                     vector.X -= speed.X;
-                    break;
-                default:
-                    rotation = SpriteEffects.None;
+                    if (vector.X < 0)
+                    {
+                        isAlive = false;
+                    }
                     break;
             }
- 
+
+            foreach (Players p in GameElements.players)
+            {
+                if (CheckCollision(p) && !hit)
+                {
+                    p.Health--;
+                    hit = true;
+                }
+
+            }
             vector.Y += speed.Y;
             speed.Y = -(float)Math.Cos(X / 100) * 2;
 
