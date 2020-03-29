@@ -16,7 +16,7 @@ namespace Brawl
         static Texture2D menuSprite, heartSprite, birdSprite;
         static Vector2 menuPos;
         public static List<Heart> hearts = new List<Heart>();
-        static List<Enemy> enemies = new List<Enemy>();
+        public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
         public static List<Platform> tiles = new List<Platform>();
         static PrintText printText;
@@ -47,22 +47,37 @@ namespace Brawl
             players.Add(new Player1(content.Load<Texture2D>("images/player/idle"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
             players.Add(new Player2(content.Load<Texture2D>("images/player2/player2"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
    
-            for (int i = 100; i < 300; i+= 16)
+            for (int i = 150; i < 300; i+= 16)
             {
-                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, 350, 0f, 0f));
+                if (i == 150)
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end"), i, 350, 0f, 0f));
+                }
+                else if(i == 294)
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end2"), i, 350, 0f, 0f));
+                }
+                else
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/stone"), i, 350, 0f, 0f));
+                }
             }
 
             for (int i = 400; i < 600; i += 16)
             {
                 if (i == 400)
                 {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile3"), i, 250, 0f, 0f));
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end"), i, 250, 0f, 0f));
+                }
+                else if (i == 592)
+                {
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end2"), i, 250, 0f, 0f));
                 }
                 else
                 {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, 250, 0f, 0f));
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/stone"), i, 250, 0f, 0f));
                 }
-          
+
             }
 
             for (int i = 100; i < 700; i += 16)
@@ -108,8 +123,8 @@ namespace Brawl
             background.Update(window);
             Random random = new Random();
             int newHeart = random.Next(1, 200);
-
-            if (newHeart == 1)
+            
+            if (newHeart == 1 && hearts.Count <= 0)
             {
                 int rndX = random.Next(100, 700);
                 int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 32);
@@ -152,10 +167,9 @@ namespace Brawl
                     Reset(window, content);
                 } 
             }
-
             foreach (Enemy e in enemies.ToList())
             {
-                e.Update(window);
+                e.Update(window, gameTime);
             }
 
             foreach (Heart h in hearts.ToList())
@@ -169,7 +183,7 @@ namespace Brawl
         public static void RunDraw(SpriteBatch spriteBatch)
         {
             background.Draw(spriteBatch);
-
+       
             foreach (Platform t in tiles.ToList())
             {
                 t.Draw(spriteBatch);
@@ -189,7 +203,6 @@ namespace Brawl
             }
             printText.Print(players[0].Lives.ToString(), spriteBatch, 35, 25);
             printText.Print(players[1].Lives.ToString(), spriteBatch, 780, 25);
-
         }
 
         public static State HighScoreUpdate()

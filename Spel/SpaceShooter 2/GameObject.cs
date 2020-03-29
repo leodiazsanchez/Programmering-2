@@ -31,6 +31,7 @@ namespace Brawl
         {
            get { return texture.Width; }
         }
+
         public float Height { get { return texture.Height; } }
     }
 }

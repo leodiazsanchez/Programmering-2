@@ -28,7 +28,7 @@ namespace Brawl
         Texture2D asset;
 
 
-        public Animation(ContentManager Content, Texture2D asset, float frameSpeed, int numOffFrames, bool looping)
+        public Animation(Texture2D asset, float frameSpeed, int numOffFrames, bool looping)
         {
             this.numOffFrames = numOffFrames;
             this.looping = looping;
@@ -74,11 +74,11 @@ namespace Brawl
 
       
 
-        public void PlayAnim(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             elapsed += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             sourceRect = new Rectangle(currentFrame * frameWidth, 0, frameWidth, frameHeight);
-
+     
             if(elapsed >= frameTime)
             {
                 if(currentFrame >= numOffFrames - 1)

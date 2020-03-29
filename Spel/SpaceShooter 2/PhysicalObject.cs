@@ -10,7 +10,6 @@ namespace Brawl
 {
     class PhysicalObject : MovingObject
     {
-        bool canMove = true;
         protected bool isAlive = true;
         protected bool isJumping = false;
 
@@ -22,7 +21,7 @@ namespace Brawl
         {
             foreach (Platform t in GameElements.tiles)
             {
-                if(speed.Y >= 0)
+                if (speed.Y >= 0)
                 {
                     /*if (speed.X > 0)
                     {

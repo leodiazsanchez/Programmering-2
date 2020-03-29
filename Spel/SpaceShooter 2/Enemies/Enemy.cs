@@ -8,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace Brawl
 {
+
     abstract class Enemy : PhysicalObject
     {
         public Enemy(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
         {
         }
 
-        abstract public void Update(GameWindow window);
+
+        abstract public void Update(GameWindow window, GameTime gameTime);
 
         abstract public override void Draw(SpriteBatch spriteBatch);
 

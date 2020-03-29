@@ -14,7 +14,7 @@ namespace Brawl
         {
 
         }
-        public override void Update(GameWindow window)
+        public override void Update(GameWindow window, GameTime gameTime)
         {
             vector.X += speed.X;
             if (vector.X > window.ClientBounds.Width - texture.Width || vector.X < 0)

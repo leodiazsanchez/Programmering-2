@@ -10,16 +10,21 @@ namespace Brawl
 {
     class Bird : Enemy
     {
+        Animation temp;
         SpriteEffects rotation = SpriteEffects.None;
         int direction = 1;
         bool hit = false;
         public Bird(Texture2D texture, float X, float Y, int direction) : base(texture, X, Y, 4.5f, 3f)
         {
             this.direction = direction;
+            temp = new Animation(texture, 250f, 3, true);
         }
 
-        public override void Update(GameWindow window)
+        public override void Update(GameWindow window, GameTime gameTime)
         {
+            temp.Position = vector;
+            temp.Rotation = rotation;
+            temp.Update(gameTime);
             switch (direction)
             {
                 case 1:
@@ -38,6 +43,11 @@ namespace Brawl
                         isAlive = false;
                     }
                     break;
+            }
+
+            if (!isAlive)
+            {
+                GameElements.enemies.Remove(this);
             }
 
             foreach (Players p in GameElements.players)
@@ -60,7 +70,7 @@ namespace Brawl
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, vector, null, Color.White, 0f, new Vector2(0, 0), 1, rotation, 0f);
+            temp.Draw(spriteBatch);
         }
     }
 }

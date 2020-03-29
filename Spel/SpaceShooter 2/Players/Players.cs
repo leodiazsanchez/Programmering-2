@@ -20,7 +20,6 @@ namespace Brawl
         int lives = 3;
         SpriteEffects rotation = SpriteEffects.None;
         int timespressed = 0;
-
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY)
         {
             this.hp = hp;
@@ -32,6 +31,11 @@ namespace Brawl
         {
             get { return this.isAttacking; }
             set { this.isAttacking = value; }
+        }
+        public Vector2 Vector
+        {
+            get { return this.vector; }
+            set { this.vector = value; }
         }
 
 
@@ -78,7 +82,7 @@ namespace Brawl
 
         public void Damage(Players other)
         {
-            if(isAttacking && CheckCollision(other))
+            if (isAttacking && CheckCollision(other))
             {
                 other.health--;
             }
@@ -86,6 +90,7 @@ namespace Brawl
 
         virtual public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
+            isAttacking = false;
             if (Health == 0)
             {
                 Lives--;

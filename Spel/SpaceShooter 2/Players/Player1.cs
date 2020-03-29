@@ -12,22 +12,27 @@ namespace Brawl
 {
     class Player1 : Players
     {
+        Animation temp;
+        int frames = 4;
+        Texture2D hp;
         public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;
+            this.hp = hp;
             Who = 1;
+            temp = new Animation(texture, 200f, frames, true);
         }
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
             base.Update(window, gameTime, content);
             Board.GetState();
-            texture = content.Load<Texture2D>("images/player/idle");
+            temp.Update(gameTime);
+            temp.Position = Vector;
+            temp.Rotation = Rotation;
             if (Board.HasBeenPressed(Keys.Z))
             {
                 IsAttacking = true;
-                texture = content.Load<Texture2D>("images/player/attack");
-               
             }
 
             if (Board.IsPressed(Keys.D))
@@ -50,7 +55,14 @@ namespace Brawl
             }
             
 
-        } 
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            //base.Draw(spriteBatch);
+            temp.Draw(spriteBatch);
+            spriteBatch.Draw(hp, new Vector2(10, 10), Color.White);
+        }
 
         public override void Reset(float speedX, float speedY)
         {
