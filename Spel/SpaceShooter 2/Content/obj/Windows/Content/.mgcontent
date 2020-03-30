@@ -14,6 +14,7 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/start.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/end.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/end2.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/island.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/stone.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/platform/tile2.png</File>
@@ -30,14 +31,27 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/HP/health_bar_5.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/hurt.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/idle.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/test.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/walk.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/player2.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/attack.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/death.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/hurt.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/idle.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/test.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/walk.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart_animated_1.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/myFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

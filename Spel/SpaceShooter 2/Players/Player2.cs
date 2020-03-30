@@ -12,6 +12,7 @@ namespace Brawl
 {
     class Player2 : Players
     {
+
         public Player2(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;
@@ -22,16 +23,12 @@ namespace Brawl
         {
             base.Update(window , gameTime, content);
 
-            if (vector.Y == window.ClientBounds.Height - texture.Height)
-            {
-                Timespressed = 0;
-            }
+
 
             if (Board.IsPressed(Keys.Right))
             {
                 vector.X += speed.X;
                 Rotation = SpriteEffects.None;
-
             }
 
             if (Board.IsPressed(Keys.Left))
@@ -48,11 +45,16 @@ namespace Brawl
 
             }
 
-            if (Board.HasBeenPressed(Keys.RightControl))
+            if (Board.IsPressed(Keys.RightControl))
             {
                 IsAttacking = true;
             }
 
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
         }
 
         public override void Reset(float speedX, float speedY)

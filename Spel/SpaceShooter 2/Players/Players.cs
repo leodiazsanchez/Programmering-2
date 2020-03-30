@@ -20,6 +20,7 @@ namespace Brawl
         int lives = 3;
         SpriteEffects rotation = SpriteEffects.None;
         int timespressed = 0;
+        Animation temp;
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY)
         {
             this.hp = hp;
@@ -38,6 +39,11 @@ namespace Brawl
             set { this.vector = value; }
         }
 
+        public Animation Anim
+        {
+            get { return temp; }
+            set { this.temp = value; }
+        }
 
         public int Timespressed
         {
@@ -145,7 +151,6 @@ namespace Brawl
         {
             //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Red, 0f, new Vector2(0, 0), 1f, Rotation, 0f);
             spriteBatch.Draw(texture, vector, null, Color.White, 0f, new Vector2(0, 0), 1f, Rotation, 0f);
-
             switch (who)
             {
                 case 1:

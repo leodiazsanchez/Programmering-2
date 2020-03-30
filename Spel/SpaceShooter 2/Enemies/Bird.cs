@@ -24,6 +24,8 @@ namespace Brawl
         {
             temp.Position = vector;
             temp.Rotation = rotation;
+            temp.FrameHeight = (int)Height;
+            temp.FrameWidth = (int)Width / 3;
             temp.Update(gameTime);
             switch (direction)
             {
@@ -70,6 +72,8 @@ namespace Brawl
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+           //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Orange, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
+            //spriteBatch.Draw(texture, vector, temp.Rect, Color.Orange * 0.3f);
             temp.Draw(spriteBatch);
         }
     }

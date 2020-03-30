@@ -44,35 +44,40 @@ namespace Brawl
             set { this.position = value; }
         }
 
-        public int NumOffFrames
-        {
-            get { return this.numOffFrames; }
-            set { this.numOffFrames = value; }
-        }
-
         public SpriteEffects Rotation
         {
             get { return this.rotation; }
             set { this.rotation = value; }
         }
 
-        public Texture2D Asset
-        {
-            get { return this.asset; }
-            set { this.asset = value; }
-        }
 
+        public int NumOffFrames
+        {
+            get { return this.numOffFrames; }
+            set { this.numOffFrames = value; }
+        }
         public int FrameWidth
         {
             get { return this.frameWidth; }
+            set { frameWidth = value; }
+        }
+        public Texture2D Asset
+        {
+            get { return this.asset; }
+            set { asset = value; }
         }
 
+        public Rectangle Rect
+        {
+            get { return this.sourceRect; }
+            set { sourceRect = value; }
+        }
         public int FrameHeight
         {
             get { return this.frameHeight; }
+            set { frameHeight = value; }
         }
 
-      
 
         public void Update(GameTime gameTime)
         {
@@ -99,6 +104,7 @@ namespace Brawl
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(asset, position, sourceRect, Color.White, 0f, new Vector2(0, 0), 1f, rotation, 0f);
+    
         }
     }
 }

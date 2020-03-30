@@ -13,7 +13,7 @@ namespace Brawl
         protected bool isAlive = true;
         protected bool isJumping = false;
 
-        protected PhysicalObject(Texture2D texture, float X, float Y, float speedX, float speedY):base(texture,X,Y,speedX,speedY)
+        protected PhysicalObject(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
         {
         }
 
@@ -41,25 +41,25 @@ namespace Brawl
                             vector.X -= t.X - X - Width;
                         }
                     }*/
-                    if(speed.Y > 0 && Y+t.Height/2 < t.Y)
+                    if (speed.Y > 0 && Y + t.Height / 2 < t.Y)
                     {
                         PhysicalObject temp = new PhysicalObject(texture, X, Y + speed.Y, speed.X, speed.Y);
-                        
+
                         if (temp.CheckCollision(t))
                         {
                             speed.Y = 0f;
-                            vector.Y += t.Y - Y-Height;
-                            if(this is Players)
+                            vector.Y += t.Y - Y - Height;
+                            if (this is Players)
                             {
                                 (this as Players).Timespressed = 0;
-                            }         
+                            }
                         }
                     }
 
                 }
             }
 
-     
+
         }
 
         public bool CheckCollision(PhysicalObject other)
@@ -67,7 +67,7 @@ namespace Brawl
             Rectangle myrectangle = new Rectangle(Convert.ToInt32(X), Convert.ToInt32(Y), Convert.ToInt32(Width), Convert.ToInt32(Height));
             Rectangle otherrectangle = new Rectangle(Convert.ToInt32(other.X), Convert.ToInt32(other.Y), Convert.ToInt32(other.Width), Convert.ToInt32(other.Height));
             return myrectangle.Intersects(otherrectangle);
-        } 
+        }
 
         public bool IsAlive
         {

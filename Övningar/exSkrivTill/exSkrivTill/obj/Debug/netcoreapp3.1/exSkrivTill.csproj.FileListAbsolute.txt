@@ -1,0 +1,11 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.deps.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.runtimeconfig.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.runtimeconfig.dev.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\bin\Debug\netcoreapp3.1\exSkrivTill.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\obj\Debug\netcoreapp3.1\exSkrivTill.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\obj\Debug\netcoreapp3.1\exSkrivTill.AssemblyInfoInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\obj\Debug\netcoreapp3.1\exSkrivTill.AssemblyInfo.cs
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\obj\Debug\netcoreapp3.1\exSkrivTill.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\exSkrivTill\exSkrivTill\obj\Debug\netcoreapp3.1\exSkrivTill.pdb

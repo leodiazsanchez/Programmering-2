@@ -44,39 +44,21 @@ namespace Brawl
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
             background = new Background(content.Load<Texture2D>("images/background"), window);
-            players.Add(new Player1(content.Load<Texture2D>("images/player/idle"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
-            players.Add(new Player2(content.Load<Texture2D>("images/player2/player2"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
    
             for (int i = 150; i < 300; i+= 16)
             {
-                if (i == 150)
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end"), i, 350, 0f, 0f));
-                }
-                else if(i == 294)
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end2"), i, 350, 0f, 0f));
-                }
-                else
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/stone"), i, 350, 0f, 0f));
-                }
+
+
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 375, 0f, 0f));
+ 
             }
 
             for (int i = 400; i < 600; i += 16)
             {
-                if (i == 400)
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end"), i, 250, 0f, 0f));
-                }
-                else if (i == 592)
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/end2"), i, 250, 0f, 0f));
-                }
-                else
-                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/stone"), i, 250, 0f, 0f));
-                }
+                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 250, 0f, 0f));
+
 
             }
 
@@ -153,7 +135,7 @@ namespace Brawl
 
             foreach (Players p in players.ToList())
             {
-  
+                   
                 p.Update(window, gameTime, content);
 
                 if (!p.IsAlive)

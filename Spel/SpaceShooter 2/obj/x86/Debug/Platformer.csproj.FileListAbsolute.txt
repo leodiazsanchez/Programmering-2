@@ -168,7 +168,6 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.exe
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.pdb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\Old_woman_attack.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\bird.xnb
-Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\player2.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile2.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile3.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile4.xnb
@@ -182,3 +181,11 @@ Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\walk.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\death.xnb
 Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\hurt.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\attack.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\death.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\hurt.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\idle.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\walk.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\test.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\test.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\island.xnb
