@@ -81,9 +81,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorfism Exempel", "Poly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 2.8 (2)", "Övning 2.8 (2)\Övning 2.8 (2).csproj", "{BDAE537E-000E-402D-92D2-F9D4E73F2F6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift SR", "Uppgift SR\Uppgift SR.csproj", "{F9884E9D-24B5-4E05-848D-F01EDDA46296}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uppgift SR", "Uppgift SR\Uppgift SR.csproj", "{F9884E9D-24B5-4E05-848D-F01EDDA46296}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slumpat lösenord", "Slumpat lösenord\Slumpat lösenord.csproj", "{37432D0E-AADD-43AC-88D5-E06F6CB0F174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slumpat lösenord", "Slumpat lösenord\Slumpat lösenord.csproj", "{37432D0E-AADD-43AC-88D5-E06F6CB0F174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{14EBD2F0-7E02-48A7-B2DA-74B93D37DF08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{37432D0E-AADD-43AC-88D5-E06F6CB0F174}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37432D0E-AADD-43AC-88D5-E06F6CB0F174}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37432D0E-AADD-43AC-88D5-E06F6CB0F174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EBD2F0-7E02-48A7-B2DA-74B93D37DF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EBD2F0-7E02-48A7-B2DA-74B93D37DF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EBD2F0-7E02-48A7-B2DA-74B93D37DF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EBD2F0-7E02-48A7-B2DA-74B93D37DF08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

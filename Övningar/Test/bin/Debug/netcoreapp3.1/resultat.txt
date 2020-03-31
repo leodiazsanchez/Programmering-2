@@ -1,0 +1,4 @@
+Sofie 12 24 
+Simon 14 19 
+Johan 9 28
+Elvira 1 27
