@@ -1,0 +1,191 @@
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\coin.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\bullet.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\exit.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\highscore.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\start.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\mine.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\tripod.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\background.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Eget spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\coin.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\bullet.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\exit.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\highscore.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\start.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\mine.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\tripod.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\Background.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.exe
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.pdb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CoreCompileInputs.cache
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runright.xnb
+D:\Hämtade filer\Programmering-2-master\Programmering-2-master\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\idle.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\coin.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adventurer-Sheet.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\bullet.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\idle.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\run.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runright.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\exit.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\highscore.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\start.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\mine.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\tripod.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\Background.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SpaceShooter2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CoreCompileInputs.cache
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.exe
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\obj\x86\Debug\SpaceShooter2.pdb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\jump.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\coin.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\adv.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\bullet.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runright.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\exit.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\highscore.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu\start.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\mine.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\tripod.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\Background.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\menu.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\myFont.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Platformer.csproj.CopyComplete
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\runLeft.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart_animated_1.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_3.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\powerups\heart_animated_1.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_1.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_2.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_3.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_decoration.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack2.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\falling.xnb
+I:\rbk\Elevmtrl 03-04\Data\Tatiana\Elevmappar\PROG2221950\ledia_01\Repetition\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\placeholder.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\playerhp.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_4.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\HP\health_bar_5.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Brawl.exe
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Brawl.pdb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.exe
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\obj\x86\Debug\Brawl.pdb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\Old_woman_attack.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\enemies\bird.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile2.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile3.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile4.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile5.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\tile6.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\idle.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\attack.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\stone.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\end.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\end2.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\walk.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\death.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\hurt.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\attack.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\death.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\hurt.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\idle.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\walk.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player2\test.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\player\test.xnb
+Z:\Leo\Rudbeck\Programmering 2\Spel\SpaceShooter 2\bin\Windows\x86\Debug\Content\images\platform\island.xnb

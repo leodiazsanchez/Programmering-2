@@ -45,7 +45,7 @@ namespace Brawl
 
             }
 
-            if (Board.IsPressed(Keys.RightControl))
+            if (Board.HasBeenPressed(Keys.RightControl))
             {
                 IsAttacking = true;
             }

@@ -104,16 +104,16 @@ namespace Brawl
         {
             background.Update(window);
             Random random = new Random();
-            int newHeart = random.Next(1, 200);
+            int rnd = random.Next(1, 200);
             
-            if (newHeart == 1 && hearts.Count <= 0)
+            if (rnd == 1 && hearts.Count <= 0)
             {
                 int rndX = random.Next(100, 700);
-                int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 32);
+                int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 64);
                 hearts.Add(new Heart(heartSprite, rndX, rndY, 2f, gameTime));
             }
 
-            if (newHeart == 2)
+            if (rnd == 2)
             {
                
                 int direction = random.Next(1, 3);

@@ -2,3 +2,6 @@ Sofie 12 24
 Simon 14 19 
 Johan 9 28
 Elvira 1 27
+ooo 20 20
+Apa 2000 2000
+Robin 20 10

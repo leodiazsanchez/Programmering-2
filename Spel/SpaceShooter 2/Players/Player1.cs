@@ -25,7 +25,7 @@ namespace Brawl
         {
             base.Update(window, gameTime, content);
             Board.GetState();
-            if (Board.IsPressed(Keys.Z))
+            if (Board.HasBeenPressed(Keys.Z))
             {
                 IsAttacking = true;
 
