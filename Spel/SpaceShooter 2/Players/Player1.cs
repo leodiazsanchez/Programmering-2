@@ -15,7 +15,7 @@ namespace Brawl
         public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;
-            Who = 1;
+            who = 1;
         }
 
 
@@ -27,21 +27,21 @@ namespace Brawl
             Board.GetState();
             if (Board.HasBeenPressed(Keys.Z))
             {
-                IsAttacking = true;
+                isAttacking = true;
 
             }
 
             if (Board.IsPressed(Keys.D))
             {
                 vector.X += speed.X;
-                Rotation = SpriteEffects.None;
+                rotation = SpriteEffects.None;
             
 
             }
             if (Board.IsPressed(Keys.A))
             {
                 vector.X -= speed.X;
-                Rotation = SpriteEffects.FlipHorizontally;
+                rotation = SpriteEffects.FlipHorizontally;
             
             }
 

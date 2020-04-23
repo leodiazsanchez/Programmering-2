@@ -13,36 +13,19 @@ namespace Brawl
     abstract class Players : PhysicalObject
     {
         float speedX, speedY;
-        Texture2D hp;
-        int who = 0;
-        bool isAttacking;
+        protected Texture2D hp;
+        protected int who = 0;
+        protected bool isAttacking;
         int health = 5;
         int lives = 3;
-        SpriteEffects rotation = SpriteEffects.None;
+        float hitbox = 48f;
+        protected SpriteEffects rotation = SpriteEffects.None;
         int timespressed = 0;
-        Animation temp;
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY)
         {
             this.hp = hp;
             this.speedX = speedX;
             this.speedY = speedY;
-        }
-
-        public bool IsAttacking
-        {
-            get { return this.isAttacking; }
-            set { this.isAttacking = value; }
-        }
-        public Vector2 Vector
-        {
-            get { return this.vector; }
-            set { this.vector = value; }
-        }
-
-        public Animation Anim
-        {
-            get { return temp; }
-            set { this.temp = value; }
         }
 
         public int Timespressed
@@ -52,21 +35,12 @@ namespace Brawl
 
         }
 
-        public int Who
+        public float Hitbox
         {
-            get { return this.who; }
-            set { this.who = value; }
+            get { return this.hitbox; }
+            set { this.hitbox = value; }
 
         }
-
-
-        public Texture2D Hp
-        {
-            get { return this.hp; }
-            set { this.hp = value; }
-
-        }
-
 
         public int Health
         {
@@ -78,12 +52,6 @@ namespace Brawl
         {
             get { return lives; }
             set { lives = value; }
-        }
-
-        public SpriteEffects Rotation
-        {
-            get { return rotation; }
-            set { rotation = value; }
         }
 
         public void Damage(Players other)
@@ -112,19 +80,19 @@ namespace Brawl
             switch (Health)
             {
                 case 1:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
                     break;
                 case 2:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
                     break;
                 case 3:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
                     break;
                 case 4:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
                     break;
                 default:
-                    Hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
+                    hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
                     break;
             }
 
@@ -150,14 +118,14 @@ namespace Brawl
         public override void Draw(SpriteBatch spriteBatch)
         {
             //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Red, 0f, new Vector2(0, 0), 1f, Rotation, 0f);
-            spriteBatch.Draw(texture, vector, null, Color.White, 0f, new Vector2(0, 0), 1f, Rotation, 0f);
+            spriteBatch.Draw(texture, vector, null, Color.White, 0f, new Vector2(0, 0), 1f, rotation, 0f);
             switch (who)
             {
                 case 1:
                     spriteBatch.Draw(hp, new Vector2(10, 10), Color.White);
                     break;
                 case 2:
-                    spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1, SpriteEffects.FlipHorizontally, 0f);
+                    spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1f, SpriteEffects.FlipHorizontally, 0f);
                     break;
             }
         }
@@ -168,7 +136,7 @@ namespace Brawl
             speed.Y = 0f;
             Health = 5;
             isAlive = true;
-            IsAttacking = false;
+            isAttacking = false;
             Timespressed = 0;
         }
         virtual public void ResetTotal(float speedX, float speedY)

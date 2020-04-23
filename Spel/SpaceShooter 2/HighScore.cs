@@ -40,7 +40,8 @@ public class HighScore
     int maxInList = 5; // Hur många som får vara i listan
     List<HSItem> highscore = new List<HSItem>();
     string name; // Spelarens namn
-
+    bool ärduklarellershuno = false;
+    public bool Ärduklarellershuno { get { return ärduklarellershuno; } set { ärduklarellershuno = value; } }
     // Används för att skriva ut vilket tecken spelaren har valt just nu:
     string currentChar;
     int key_index = 0; // Denna används för att mata in spelarens namn
@@ -109,6 +110,8 @@ public class HighScore
             // elementet har index 5. Vi gör highscore.RemoveAt(5):
             highscore.RemoveAt(maxInList);
         }
+
+        Ärduklarellershuno = true;
     }
 
     // =======================================================================
@@ -148,6 +151,7 @@ public class HighScore
             text += h.Name + " " + h.Points + "\n";
 
         spriteBatch.DrawString(font, text, Vector2.Zero, Color.White);
+
     }
 
     // =======================================================================
@@ -210,6 +214,13 @@ public class HighScore
     {
         string text = "ENTER NAME:" + name + currentChar;
         spriteBatch.DrawString(font, text, Vector2.Zero, Color.White);
+        string text2 = "";
+
+        foreach (HSItem h in highscore)
+        {
+            text2 += h.Name + " " + h.Points + "\n";
+        }
+        spriteBatch.DrawString(font, text2, new Vector2 (0,20), Color.White);
     }
 
     // =======================================================================
@@ -217,7 +228,7 @@ public class HighScore
     // =======================================================================
     public void SaveToFile(string filename)
     {
-        StreamWriter sw = new StreamWriter(filename);
+        StreamWriter sw = new StreamWriter(filename, append:false);
         foreach (HSItem item in highscore)
         {
             sw.WriteLine($"{item.Name}: {item.Points}");

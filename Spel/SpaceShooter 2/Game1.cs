@@ -55,6 +55,7 @@ namespace Brawl
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+            GameElements.UnloadSave();
         }
 
         /// <summary>
@@ -64,15 +65,14 @@ namespace Brawl
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+
             switch (GameElements.currentState)
             {
                 case GameElements.State.Run:
                     GameElements.currentState = GameElements.RunUpdate(Content, Window, gameTime);
                     break;
                 case GameElements.State.HighScore:
-                    GameElements.currentState = GameElements.HighScoreUpdate();
+                    GameElements.currentState = GameElements.HighScoreUpdate(gameTime, Window, Content);
                     break;
                 case GameElements.State.Quit:
                     this.Exit();

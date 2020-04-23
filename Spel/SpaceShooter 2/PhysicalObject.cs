@@ -65,8 +65,18 @@ namespace Brawl
         public bool CheckCollision(PhysicalObject other)
         {
             Rectangle myrectangle = new Rectangle(Convert.ToInt32(X), Convert.ToInt32(Y), Convert.ToInt32(Width), Convert.ToInt32(Height));
-            Rectangle otherrectangle = new Rectangle(Convert.ToInt32(other.X), Convert.ToInt32(other.Y), Convert.ToInt32(other.Width), Convert.ToInt32(other.Height));
-            return myrectangle.Intersects(otherrectangle);
+            if (other is Players)
+            {
+                Rectangle otherrectangle = new Rectangle(Convert.ToInt32(other.X), Convert.ToInt32(other.Y), Convert.ToInt32((other as Players).Hitbox),Convert.ToInt32(other.Height));
+                return myrectangle.Intersects(otherrectangle);
+            }
+            else
+            {
+                Rectangle otherrectangle = new Rectangle(Convert.ToInt32(other.X), Convert.ToInt32(other.Y), Convert.ToInt32(other.Width), Convert.ToInt32(other.Height));
+                return myrectangle.Intersects(otherrectangle);
+            }
+         
+          
         }
 
         public bool IsAlive

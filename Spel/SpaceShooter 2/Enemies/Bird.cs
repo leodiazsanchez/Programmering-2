@@ -10,23 +10,23 @@ namespace Brawl
 {
     class Bird : Enemy
     {
-        Animation temp;
+        Animation animation;
         SpriteEffects rotation = SpriteEffects.None;
         int direction = 1;
         bool hit = false;
         public Bird(Texture2D texture, float X, float Y, int direction) : base(texture, X, Y, 4.5f, 3f)
         {
             this.direction = direction;
-            temp = new Animation(texture, 250f, 3, true);
+            animation = new Animation(texture, 250f, 3, true);
         }
 
         public override void Update(GameWindow window, GameTime gameTime)
         {
-            temp.Position = vector;
-            temp.Rotation = rotation;
-            temp.FrameHeight = (int)Height;
-            temp.FrameWidth = (int)Width / 3;
-            temp.Update(gameTime);
+            animation.Position = vector;
+            animation.Rotation = rotation;
+            animation.FrameHeight = (int)Height;
+            animation.FrameWidth = (int)Width / 3;
+            animation.Update(gameTime);
             switch (direction)
             {
                 case 1:
@@ -72,9 +72,9 @@ namespace Brawl
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-           //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Orange, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
+            //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Orange, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
             //spriteBatch.Draw(texture, vector, temp.Rect, Color.Orange * 0.3f);
-            temp.Draw(spriteBatch);
+            animation.Draw(spriteBatch);
         }
     }
 }

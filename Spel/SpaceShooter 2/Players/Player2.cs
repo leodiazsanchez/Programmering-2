@@ -12,29 +12,40 @@ namespace Brawl
 {
     class Player2 : Players
     {
-
+        Animation animation;
+        int numOffFrames = 4;
+       
         public Player2(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;
-            Who = 2;
+            who = 2;
+            animation = new Animation(texture, 200f, numOffFrames, true);
         }
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
-            base.Update(window , gameTime, content);
+            base.Update(window, gameTime, content);
 
-
+            animation.Position = vector;
+            animation.Rotation = rotation;
+            animation.Asset = content.Load<Texture2D>("images/player2/idle");
+            animation.NumOffFrames = 4;
+            animation.Update(gameTime);
 
             if (Board.IsPressed(Keys.Right))
             {
+                animation.Asset = content.Load<Texture2D>("images/player2/walk");
+                animation.NumOffFrames = 6;
                 vector.X += speed.X;
-                Rotation = SpriteEffects.None;
+                rotation = SpriteEffects.None;            
             }
 
             if (Board.IsPressed(Keys.Left))
             {
+                animation.Asset = content.Load<Texture2D>("images/player2/walk");
+                animation.NumOffFrames = 6;
                 vector.X -= speed.X;
-                Rotation = SpriteEffects.FlipHorizontally;
+                rotation = SpriteEffects.FlipHorizontally;
             }
 
 
@@ -47,14 +58,17 @@ namespace Brawl
 
             if (Board.HasBeenPressed(Keys.RightControl))
             {
-                IsAttacking = true;
+                animation.Asset = content.Load<Texture2D>("images/player2/attack");
+                animation.NumOffFrames = 6;
+                isAttacking = true;
             }
+         
 
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            base.Draw(spriteBatch);
+            animation.Draw(spriteBatch);
         }
 
         public override void Reset(float speedX, float speedY)

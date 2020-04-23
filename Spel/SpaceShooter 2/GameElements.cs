@@ -22,7 +22,10 @@ namespace Brawl
         static PrintText printText;
         static int spawnX;
         static Menu menu;
+        static SpriteFont font;
         static Background background;
+        static HighScore highScore;
+        private static Texture2D lobbybg;
 
 
         //Krafter och liknande
@@ -34,7 +37,7 @@ namespace Brawl
 
         public static void Initialize()
         {
-
+            highScore = new HighScore(10);
         }
 
         public static void LoadContent(ContentManager content, GameWindow window)
@@ -45,8 +48,8 @@ namespace Brawl
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
             background = new Background(content.Load<Texture2D>("images/background"), window);
             players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
-            players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
-   
+            players.Add(new Player2(content.Load<Texture2D>("images/player2/idle"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            lobbybg = (content.Load<Texture2D>("images/background"));
             for (int i = 150; i < 300; i+= 16)
             {
 
@@ -85,8 +88,14 @@ namespace Brawl
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
             birdSprite = content.Load<Texture2D>("images/enemies/bird");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
-        }
+            highScore.LoadFromFile("highscore.txt");
+            font = content.Load<SpriteFont>("myFont");
 
+        }
+        public static void UnloadSave()
+        {
+            highScore.SaveToFile("highscore.txt");
+        }
         public static State MenuUpdate(GameTime gameTime)
         {
             return (State)menu.Update(gameTime);
@@ -102,6 +111,8 @@ namespace Brawl
 
         public static State RunUpdate(ContentManager content, GameWindow window, GameTime gameTime)
         {
+            KeyboardState keyboardState = Keyboard.GetState();
+            if (keyboardState.IsKeyDown(Keys.Escape)) return State.Menu;
             background.Update(window);
             Random random = new Random();
             int rnd = random.Next(1, 200);
@@ -140,8 +151,8 @@ namespace Brawl
 
                 if (!p.IsAlive)
                 {
-                    ResetTotal(window, content);
-                    return State.Menu;
+                    //ResetTotal(window, content);
+                    return State.HighScore;
                 }
 
                 if (p.Lives == 0)
@@ -187,15 +198,38 @@ namespace Brawl
             printText.Print(players[1].Lives.ToString(), spriteBatch, 780, 25);
         }
 
-        public static State HighScoreUpdate()
+        public static State HighScoreUpdate(GameTime gameTime, GameWindow window, ContentManager content)
         {
             KeyboardState keyboardState = Keyboard.GetState();
             if (keyboardState.IsKeyDown(Keys.Escape)) return State.Menu;
+
+            if (players[0].Lives == 0 || players[1].Lives == 0)
+            {
+                if (players[0].Lives > players[1].Lives)
+                {
+                    highScore.EnterUpdate(gameTime, players[0].Lives);
+                }
+                else
+                {
+                    highScore.EnterUpdate(gameTime, players[1].Lives);
+                }
+
+                if (highScore.Ärduklarellershuno)
+                {
+                    ResetTotal(window, content);
+                    highScore.Ärduklarellershuno = false;
+                    return State.HighScore;
+                }
+            }
+      
+
             return State.HighScore;
         }
 
         public static void HighScoreDraw(SpriteBatch spriteBatch)
         {
+            spriteBatch.Draw(lobbybg, new Vector2(0, 0), Color.White);
+            highScore.EnterDraw(spriteBatch, font);
 
         }
 
