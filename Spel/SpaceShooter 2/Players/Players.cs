@@ -18,7 +18,6 @@ namespace Brawl
         protected bool isAttacking;
         int health = 5;
         int lives = 3;
-        float hitbox = 48f;
         protected SpriteEffects rotation = SpriteEffects.None;
         int timespressed = 0;
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY)
@@ -32,13 +31,6 @@ namespace Brawl
         {
             get { return this.timespressed; }
             set { this.timespressed = value; }
-
-        }
-
-        public float Hitbox
-        {
-            get { return this.hitbox; }
-            set { this.hitbox = value; }
 
         }
 
@@ -117,8 +109,6 @@ namespace Brawl
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Red, 0f, new Vector2(0, 0), 1f, Rotation, 0f);
-            spriteBatch.Draw(texture, vector, null, Color.White, 0f, new Vector2(0, 0), 1f, rotation, 0f);
             switch (who)
             {
                 case 1:

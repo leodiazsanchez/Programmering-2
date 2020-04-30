@@ -47,8 +47,8 @@ namespace Brawl
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
             background = new Background(content.Load<Texture2D>("images/background"), window);
-            players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
-            players.Add(new Player2(content.Load<Texture2D>("images/player2/idle"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5")));
+            players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
+            players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
             lobbybg = (content.Load<Texture2D>("images/background"));
             for (int i = 150; i < 300; i+= 16)
             {
@@ -134,10 +134,10 @@ namespace Brawl
                 }
                 else if (direction == 2)
                 {
-                    spawnX = window.ClientBounds.Width-birdSprite.Width;
+                    spawnX = window.ClientBounds.Width+birdSprite.Width;
                 }           
                 int rndY = random.Next(window.ClientBounds.Height / 3 , window.ClientBounds.Height - 32 - heartSprite.Height);
-                Bird bird = new Bird(birdSprite, spawnX, rndY, direction);
+                Bird bird = new Bird(birdSprite, spawnX, rndY, direction,content);
                 enemies.Add(bird);
             }
 

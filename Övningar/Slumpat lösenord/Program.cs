@@ -5,33 +5,32 @@ namespace Slumpat_lösenord
 {
     class Program
     {
+        static string Lösen()
+        {
+            string lösenord = "";
+            Random random = new Random();
+            for (int i = 0; i < 3; i++)
+            {
+                char gemen = Convert.ToChar(random.Next(97, 123));
+                lösenord += gemen;
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                char siffra = Convert.ToChar(random.Next(48, 58));
+                lösenord += siffra;
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                char versal = Convert.ToChar(random.Next(65, 91));
+                lösenord += versal;
+            }
+            return lösenord;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Användarnamn:");
             string user = Console.ReadLine();
-
-
-            string Lösen()
-            {
-                string lösenord = "";
-                Random random = new Random();
-                for (int i = 0; i < 3; i++)
-                {
-                    char gemen = Convert.ToChar(random.Next(97, 123));
-                    lösenord += gemen;
-                }
-                for (int i = 0; i < 2; i++)
-                {
-                    char siffra = Convert.ToChar(random.Next(48, 58));
-                    lösenord += siffra;
-                }
-                for (int i = 0; i < 3; i++)
-                {
-                    char versal = Convert.ToChar(random.Next(65, 91));
-                    lösenord += versal;
-                }
-                return lösenord;
-            }
 
             try
             {

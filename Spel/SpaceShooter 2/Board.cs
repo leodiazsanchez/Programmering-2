@@ -11,7 +11,6 @@ namespace Brawl
     {
         static KeyboardState currentKeyState;
         static KeyboardState previousKeyState;
-        static int timespressed;
 
         public static KeyboardState GetState()
         {

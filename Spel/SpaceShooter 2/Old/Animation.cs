@@ -26,13 +26,14 @@ namespace Brawl
         bool looping;
         SpriteEffects rotation;
         Texture2D asset;
+        string assetName;
 
-
-        public Animation(Texture2D asset, float frameSpeed, int numOffFrames, bool looping)
+        public Animation(string assetName, float frameSpeed, int numOffFrames, bool looping, ContentManager content)
         {
             this.numOffFrames = numOffFrames;
             this.looping = looping;
-            this.asset = asset;
+            this.assetName = assetName;
+            this.asset = content.Load<Texture2D>(assetName);
             this.frameTime = frameSpeed;
             frameWidth = (asset.Width / numOffFrames);
             frameHeight = (asset.Height);
@@ -61,7 +62,7 @@ namespace Brawl
             get { return this.frameWidth; }
             set { frameWidth = value; }
         }
-        public Texture2D Asset
+        public Texture2D Texture
         {
             get { return this.asset; }
             set { asset = value; }

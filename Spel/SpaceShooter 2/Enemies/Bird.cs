@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,11 @@ namespace Brawl
         SpriteEffects rotation = SpriteEffects.None;
         int direction = 1;
         bool hit = false;
-        public Bird(Texture2D texture, float X, float Y, int direction) : base(texture, X, Y, 4.5f, 3f)
+       
+        public Bird(Texture2D texture, float X, float Y, int direction, ContentManager content) : base(texture, X, Y, 4.5f, 3f)
         {
             this.direction = direction;
-            animation = new Animation(texture, 250f, 3, true);
+            animation = new Animation("images/enemies/bird", 250f, 3, true, content);
         }
 
         public override void Update(GameWindow window, GameTime gameTime)
@@ -40,7 +42,7 @@ namespace Brawl
                 case 2:
                     rotation = SpriteEffects.FlipHorizontally;
                     vector.X -= speed.X;
-                    if (vector.X < 0)
+                    if (vector.X < -100)
                     {
                         isAlive = false;
                     }
