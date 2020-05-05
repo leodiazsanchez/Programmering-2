@@ -34,10 +34,12 @@ namespace Brawl
             animation.Update(gameTime);
 
             Board.GetState();
-            if (Board.HasBeenPressed(Keys.Z))
+            if (Board.IsPressed(Keys.Z))
             {
-                isAttacking = true;
-
+                if (Board.HasBeenPressed(Keys.Z)){
+                    isAttacking = true;
+                }
+                animation.Texture = content.Load<Texture2D>("images/player/attack");
             }
 
             if (Board.IsPressed(Keys.D))

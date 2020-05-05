@@ -1,0 +1,10 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.deps.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.runtimeconfig.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.runtimeconfig.dev.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\bin\Debug\netcoreapp3.1\Klient.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.AssemblyInfoInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.AssemblyInfo.cs
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.pdb

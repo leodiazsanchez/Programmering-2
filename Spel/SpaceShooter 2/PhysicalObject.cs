@@ -38,7 +38,7 @@ namespace Brawl
                         if (temp.CheckCollision(t))
                         {
                             speed.X = 0f;
-                            vector.X -= t.X - X - Width;
+                            vector.X -= t.X + X + Width;
                         }
                     }*/
                     if (speed.Y > 0 && Y + t.Height / 2 < t.Y)

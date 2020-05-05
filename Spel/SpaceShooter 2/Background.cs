@@ -16,11 +16,6 @@ namespace Brawl
             this.texture = texture;
         }
 
-        public void Update(GameWindow window)
-        {
-
-        }
-
         public void Draw(SpriteBatch spriteBatch)
         {
 

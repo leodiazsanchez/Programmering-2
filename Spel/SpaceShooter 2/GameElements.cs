@@ -1,8 +1,10 @@
 ﻿using Brawl;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,7 @@ namespace Brawl
 {
     static class GameElements
     {
-        static Texture2D menuSprite, heartSprite, birdSprite;
-        static Vector2 menuPos;
+        static Texture2D heartSprite, birdSprite;
         public static List<Heart> hearts = new List<Heart>();
         public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
@@ -26,11 +27,8 @@ namespace Brawl
         static Background background;
         static HighScore highScore;
         private static Texture2D lobbybg;
-
-
-        //Krafter och liknande
-        static public float gravity = 0.5f;
-        static public float xFriktion = 1f;
+        static Song song;
+        public static SoundEffect powerUp, damage;
 
         public enum State { Menu, Run, HighScore, Quit };
         public static State currentState;
@@ -42,27 +40,38 @@ namespace Brawl
 
         public static void LoadContent(ContentManager content, GameWindow window)
         {
+            //Laddar in meny
             menu = new Menu((int)State.Menu);
             menu.AddItem(content.Load<Texture2D>("images/menu/start"), (int)State.Run);
             menu.AddItem(content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
+
+            //Laddar in backgrund
             background = new Background(content.Load<Texture2D>("images/background"), window);
+            lobbybg = content.Load<Texture2D>("images/background");
+
+            //Laddar in spelare
             players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
             players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
-            lobbybg = (content.Load<Texture2D>("images/background"));
+
+            //Laddar in låt och ljudeffekter
+            song = content.Load<Song>("Sounds/gametrack");
+            powerUp = content.Load<SoundEffect>("Sounds/heart");
+            damage = content.Load<SoundEffect>("Sounds/damage");
+            //Spelar upp låt
+            MediaPlayer.Play(song);
+            MediaPlayer.Volume = 0.1f;
+            MediaPlayer.IsRepeating = true;
+
+            //Laddar in värld
             for (int i = 150; i < 300; i+= 16)
             {
-
-
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 375, 0f, 0f));
- 
+                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 375, 0f, 0f));
             }
 
             for (int i = 400; i < 600; i += 16)
             {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 250, 0f, 0f));
-
-
+                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 250, 0f, 0f));
             }
 
             for (int i = 100; i < 700; i += 16)
@@ -83,8 +92,9 @@ namespace Brawl
                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile2"), i, window.ClientBounds.Height - 16, 0f, 0f));
                }
           
-
             }
+
+            //Laddar in resterade
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
             birdSprite = content.Load<Texture2D>("images/enemies/bird");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
@@ -92,6 +102,8 @@ namespace Brawl
             font = content.Load<SpriteFont>("myFont");
 
         }
+
+        //Sparar highscore till fil
         public static void UnloadSave()
         {
             highScore.SaveToFile("highscore.txt");
@@ -100,20 +112,20 @@ namespace Brawl
         {
             return (State)menu.Update(gameTime);
         }
-
         public static void MenuDraw(SpriteBatch spriteBatch)
         {
             background.Draw(spriteBatch);
             menu.Draw(spriteBatch);
         }
 
-
-
         public static State RunUpdate(ContentManager content, GameWindow window, GameTime gameTime)
         {
+
+         
             KeyboardState keyboardState = Keyboard.GetState();
             if (keyboardState.IsKeyDown(Keys.Escape)) return State.Menu;
-            background.Update(window);
+
+            //Skapar hjärtan och fåglar slumpmässigt
             Random random = new Random();
             int rnd = random.Next(1, 200);
             
@@ -141,6 +153,7 @@ namespace Brawl
                 enemies.Add(bird);
             }
 
+            //Kollar om spelare tagit skada
             players[1].Damage(players[0]);
             players[0].Damage(players[1]);
 
@@ -151,7 +164,6 @@ namespace Brawl
 
                 if (!p.IsAlive)
                 {
-                    //ResetTotal(window, content);
                     return State.HighScore;
                 }
 
@@ -167,7 +179,7 @@ namespace Brawl
 
             foreach (Heart h in hearts.ToList())
             {
-                h.Update(window, gameTime);
+                h.Update(gameTime);
             }
 
             return State.Run;
@@ -176,7 +188,7 @@ namespace Brawl
         public static void RunDraw(SpriteBatch spriteBatch)
         {
             background.Draw(spriteBatch);
-       
+           
             foreach (Platform t in tiles.ToList())
             {
                 t.Draw(spriteBatch);
@@ -188,7 +200,6 @@ namespace Brawl
             foreach (Enemy e in enemies)
             {
                 e.Draw(spriteBatch);
-
             }
             foreach (Heart h in hearts)
             {
@@ -214,6 +225,7 @@ namespace Brawl
                     highScore.EnterUpdate(gameTime, players[1].Lives);
                 }
 
+                //Kollar om alla värden blivit satta innan spelet 
                 if (highScore.Ärduklarellershuno)
                 {
                     ResetTotal(window, content);
@@ -221,7 +233,6 @@ namespace Brawl
                     return State.HighScore;
                 }
             }
-      
 
             return State.HighScore;
         }
@@ -251,7 +262,6 @@ namespace Brawl
                 p.ResetTotal(5f, 0f);
                 enemies.Clear();
                 hearts.Clear();
-                Random random = new Random();
             }
 
         }

@@ -65,17 +65,10 @@ namespace Brawl
             }
             vector.Y += speed.Y;
             speed.Y = -(float)Math.Cos(X / 100) * 2;
-
-            /*if (vector.X > window.ClientBounds.Width)
-            {
-                isAlive = false;
-            }*/
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, vector, new Rectangle((int)X, (int)Y, (int)Width, (int)Height), Color.Orange, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
-            //spriteBatch.Draw(texture, vector, temp.Rect, Color.Orange * 0.3f);
             animation.Draw(spriteBatch);
         }
     }

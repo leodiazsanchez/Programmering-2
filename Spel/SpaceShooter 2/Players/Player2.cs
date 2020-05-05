@@ -55,11 +55,14 @@ namespace Brawl
 
             }
 
-            if (Board.HasBeenPressed(Keys.RightControl))
+            if (Board.IsPressed(Keys.RightControl))
             {
-               // animation.Texture = ("images/player2/attack");
+                animation.Texture = content.Load<Texture2D>("images/player2/attack");
                 animation.NumOffFrames = 6;
-                isAttacking = true;
+                if (Board.HasBeenPressed(Keys.RightControl))
+                {
+                    isAttacking = true;
+                }
             }
          
 

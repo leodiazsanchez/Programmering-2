@@ -35,16 +35,32 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player/walk.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/attack.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/death.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/HP/health_bar_1.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/HP/health_bar_2.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/HP/health_bar_3.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/HP/health_bar_4.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/HP/health_bar_5.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/hurt.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/idle.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/test.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/player2/walk.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/coin.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/fireball.jpg</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/powerups/heart_animated_1.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/myFont.spritefont</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/Sounds/damage.ogg</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/Sounds/gametrack.mp3</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/Sounds/heart.ogg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,0 +1,11 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.deps.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\bin\Debug\netcoreapp3.1\Server.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\obj\Debug\netcoreapp3.1\Server.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\obj\Debug\netcoreapp3.1\Server.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Server\obj\Debug\netcoreapp3.1\Server.pdb

@@ -51,6 +51,7 @@ namespace Brawl
             if (isAttacking && CheckCollision(other))
             {
                 other.health--;
+                GameElements.damage.Play();
             }
         }
 
@@ -69,24 +70,50 @@ namespace Brawl
                 isAlive = false;
             }
 
-            switch (Health)
+            if (who == 1)
             {
-                case 1:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
-                    break;
-                case 2:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
-                    break;
-                case 3:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
-                    break;
-                case 4:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
-                    break;
-                default:
-                    hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
-                    break;
+                switch (Health)
+                {
+                    case 1:
+                        hp = content.Load<Texture2D>("images/player/hp/health_bar_1");
+                        break;
+                    case 2:
+                        hp = content.Load<Texture2D>("images/player/hp/health_bar_2");
+                        break;
+                    case 3:
+                        hp = content.Load<Texture2D>("images/player/hp/health_bar_3");
+                        break;
+                    case 4:
+                        hp = content.Load<Texture2D>("images/player/hp/health_bar_4");
+                        break;
+                    default:
+                        hp = content.Load<Texture2D>("images/player/hp/health_bar_5");
+                        break;
+                }
             }
+            else
+            {
+                switch (Health)
+                {
+                    case 1:
+                        hp = content.Load<Texture2D>("images/player2/hp/health_bar_1");
+                        break;
+                    case 2:
+                        hp = content.Load<Texture2D>("images/player2/hp/health_bar_2");
+                        break;
+                    case 3:
+                        hp = content.Load<Texture2D>("images/player2/hp/health_bar_3");
+                        break;
+                    case 4:
+                        hp = content.Load<Texture2D>("images/player2/hp/health_bar_4");
+                        break;
+                    default:
+                        hp = content.Load<Texture2D>("images/player2/hp/health_bar_5");
+                        break;
+                }
+            }
+
+        
 
             if (vector.Y > window.ClientBounds.Height)
             {
@@ -115,7 +142,7 @@ namespace Brawl
                     spriteBatch.Draw(hp, new Vector2(10, 10), Color.White);
                     break;
                 case 2:
-                    spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1f, SpriteEffects.FlipHorizontally, 0f);
+                    spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1f, SpriteEffects.None, 0f);
                     break;
             }
         }
