@@ -8,3 +8,4 @@ Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\
 Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.AssemblyInfo.cs
 Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.dll
 Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Network\Klient\obj\Debug\netcoreapp3.1\Klient.csprojAssemblyReference.cache

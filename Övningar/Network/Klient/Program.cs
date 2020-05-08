@@ -11,32 +11,47 @@ namespace Klient
     {
         static void Main(string[] args)
         {
-            //Port och adress
-            int port = 8001;
-            string address = "127.0.0.1";
-            
-            //Anslut till servern
-            Console.WriteLine("Ansluter...");
-            TcpClient tcpClient = new TcpClient();
-            tcpClient.Connect(address, port);
-            Console.WriteLine("Ansluten!");
+            try
+            {
+                //Port och adress
+                int port = 8001;
+                string address = "127.0.0.1";
 
-            //Skriv in meddelande att skicka
-            Console.Write("Skriv in ditt meddelande: ");
-            string message = Console.ReadLine(); 
+                //Anslut till servern
+                Console.WriteLine("Ansluter...");
+                TcpClient tcpClient = new TcpClient();
+                tcpClient.Connect(address, port);
+                Console.WriteLine("Ansluten!");
 
-            
-            //Konvertera meddelande till ASCII-bytes
-            Byte[] bMessage = System.Text.Encoding.ASCII.GetBytes(message);
+                //Skriv in meddelande att skicka
+                Console.Write("Skriv in ditt meddelande: ");
+                string message = Console.ReadLine();
 
-            //Skicka iväg meddelande
-            Console.WriteLine("Skickar...");
-            NetworkStream tcpStream = tcpClient.GetStream();
-            tcpStream.Write(bMessage, 0, bMessage.Length);
-            tcpClient.Close();
 
-            //Förhindra konsolen från att stängas
-            Console.ReadKey();
+                //Konvertera meddelande till ASCII-bytes
+                Byte[] bMessage = System.Text.Encoding.ASCII.GetBytes(message);
+
+                //Skicka iväg meddelande
+                Console.WriteLine("Skickar...");
+                NetworkStream tcpStream = tcpClient.GetStream();
+                tcpStream.Write(bMessage, 0, bMessage.Length);
+                byte[] bRead = new byte[256];
+                int bReadSize = tcpStream.Read(bRead, 0, bRead.Length);
+                string read = "";
+                for (int i = 0; i < bReadSize; i++)
+                {
+                    read += Convert.ToChar(bRead[i]);
+                }
+                Console.WriteLine("Servern säger: " + read);
+                tcpClient.Close();
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine("Error: " + e.Message);
+            }
+
+
 
         }
     }
