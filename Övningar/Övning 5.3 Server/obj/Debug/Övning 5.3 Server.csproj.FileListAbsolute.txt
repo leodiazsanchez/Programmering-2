@@ -1,0 +1,9 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\bin\Debug\Övning 5.3 Server.exe.config
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\bin\Debug\Övning 5.3 Server.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\bin\Debug\Övning 5.3 Server.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning 5.3 Server.csprojAssemblyReference.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning_5._3_Server.Form1.resources
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning_5._3_Server.Properties.Resources.resources
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning 5.3 Server.csproj.GenerateResource.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning 5.3 Server.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Server\obj\Debug\Övning 5.3 Server.pdb

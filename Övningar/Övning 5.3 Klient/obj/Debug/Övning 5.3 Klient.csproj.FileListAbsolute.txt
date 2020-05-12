@@ -1,0 +1,8 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\bin\Debug\Övning 5.3 Klient.exe.config
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\bin\Debug\Övning 5.3 Klient.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\bin\Debug\Övning 5.3 Klient.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\obj\Debug\Övning_5._3_Klient.Form1.resources
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\obj\Debug\Övning_5._3_Klient.Properties.Resources.resources
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\obj\Debug\Övning 5.3 Klient.csproj.GenerateResource.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\obj\Debug\Övning 5.3 Klient.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\Övning 5.3 Klient\obj\Debug\Övning 5.3 Klient.pdb
