@@ -14,6 +14,7 @@ namespace Brawl
     {
         Animation animation;
         int numOffFrames = 4;
+
         public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp,ContentManager content) : base(texture, X, Y, speedX, speedY, hp)
         {
             this.texture = texture;

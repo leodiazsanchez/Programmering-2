@@ -1,0 +1,10 @@
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.exe
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.deps.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.runtimeconfig.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.runtimeconfig.dev.json
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\bin\Debug\netcoreapp3.1\test1.pdb
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\obj\Debug\netcoreapp3.1\test1.AssemblyInfoInputs.cache
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\obj\Debug\netcoreapp3.1\test1.AssemblyInfo.cs
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\obj\Debug\netcoreapp3.1\test1.dll
+Z:\Leo\Rudbeck\Programmering 2\Övningar\test1\obj\Debug\netcoreapp3.1\test1.pdb

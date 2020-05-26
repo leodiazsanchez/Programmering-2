@@ -8,14 +8,12 @@ using System.Threading.Tasks;
 
 namespace Brawl
 {
-    class Heart : PowerUp
+    class Fire : PowerUp
     {
-    
-
-        public Heart(Texture2D texture, float X, float Y, float speedY, GameTime gameTime) : base(texture, X, Y, speedY, gameTime)
+        double stop;
+        public Fire(Texture2D texture, float X, float Y, float speedY, GameTime gameTime) : base(texture, X, Y, speedY, gameTime)
         {
- 
-
+            stop = gameTime.TotalGameTime.TotalMilliseconds + 10000;
         }
 
 
@@ -30,8 +28,7 @@ namespace Brawl
                     {
                         GameElements.powerUps.Remove(this);
                         GameElements.powerUp.Play(volume: 0.1f, pitch: 0.0f, pan: 0.0f);
-                        if (p.Health < 5)
-                            p.Health++;
+                        p.SuperSpeed = 7.5f;
                     }
                 }
                 else
@@ -49,6 +46,14 @@ namespace Brawl
             {
                 isAlive = false;
             }
+            foreach (Players p in GameElements.players)
+            {
+                if (stop < gameTime.TotalGameTime.TotalMilliseconds)
+                {
+                    p.SuperSpeed = 5;
+                }
+            }
+
         }
     }
 }

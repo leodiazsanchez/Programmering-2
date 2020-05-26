@@ -12,7 +12,8 @@ namespace Brawl
 {
     abstract class Players : PhysicalObject
     {
-        float speedX, speedY;
+        float speedX,speedY;
+        bool superSpeed = false;
         protected Texture2D hp;
         protected int who = 0;
         protected bool isAttacking;
@@ -32,6 +33,12 @@ namespace Brawl
             get { return this.timespressed; }
             set { this.timespressed = value; }
 
+        }
+
+        public float SuperSpeed
+        {
+            get { return speed.X; }
+            set { speed.X = value; }
         }
 
         public int Health

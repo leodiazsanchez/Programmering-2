@@ -109,6 +109,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.4 Klient", "Övni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.4 Server", "Övning 5.4 Server\Övning 5.4 Server.csproj", "{FC2994B5-029D-4E2C-B52D-4A9708C83713}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test1", "test1\test1.csproj", "{AC83895E-51FD-4E05-A8A4-0F306337D04E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -527,6 +529,14 @@ Global
 		{FC2994B5-029D-4E2C-B52D-4A9708C83713}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC2994B5-029D-4E2C-B52D-4A9708C83713}.Release|x86.ActiveCfg = Release|Any CPU
 		{FC2994B5-029D-4E2C-B52D-4A9708C83713}.Release|x86.Build.0 = Release|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC83895E-51FD-4E05-A8A4-0F306337D04E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

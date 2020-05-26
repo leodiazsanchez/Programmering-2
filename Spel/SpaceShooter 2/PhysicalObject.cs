@@ -13,7 +13,7 @@ namespace Brawl
         protected bool isAlive = true;
         protected bool isJumping = false;
 
-        protected PhysicalObject(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
+        public PhysicalObject(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
         {
         }
 

@@ -60,6 +60,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="Power Ups\Fire.cs" />
     <Compile Include="Power Ups\Heart.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Menu.cs" />
@@ -70,6 +71,8 @@
     <Compile Include="Players\Player1.cs" />
     <Compile Include="Players\Player2.cs" />
     <Compile Include="Players\Players.cs" />
+    <Compile Include="Power Ups\PowerUp.cs" />
+    <Compile Include="Power Ups\Speed.cs" />
     <Compile Include="PrintText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +97,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

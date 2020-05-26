@@ -15,8 +15,8 @@ namespace Brawl
 {
     static class GameElements
     {
-        static Texture2D heartSprite, birdSprite;
-        public static List<Heart> hearts = new List<Heart>();
+        static Texture2D heartSprite, birdSprite, speedSprite, fireSprite;
+        public static List<PowerUp> powerUps = new List<PowerUp>();
         public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
         public static List<Platform> tiles = new List<Platform>();
@@ -96,6 +96,8 @@ namespace Brawl
 
             //Laddar in resterade
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
+            speedSprite = content.Load<Texture2D>("images/powerups/speed");
+            fireSprite = content.Load<Texture2D>("images/powerups/fire");
             birdSprite = content.Load<Texture2D>("images/enemies/bird");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
             highScore.LoadFromFile("highscore.txt");
@@ -127,13 +129,27 @@ namespace Brawl
 
             //Skapar hjärtan och fåglar slumpmässigt
             Random random = new Random();
-            int rnd = random.Next(1, 200);
+            int rnd = random.Next(1, 500);
             
-            if (rnd == 1 && hearts.Count <= 0)
+            if (rnd == 1 && powerUps.Count <= 0)
             {
                 int rndX = random.Next(100, 700);
                 int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 64);
-                hearts.Add(new Heart(heartSprite, rndX, rndY, 2f, gameTime));
+                powerUps.Add(new Heart(heartSprite, rndX, rndY, 2f, gameTime));
+            }
+
+            if (rnd == 3 && powerUps.Count <= 0)
+            {
+                int rndX = random.Next(100, 700);
+                int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 64);
+                powerUps.Add(new Speed(speedSprite, rndX, rndY, 2f, gameTime));
+            }
+
+            if (rnd == 4 && powerUps.Count <= 0)
+            {
+                int rndX = random.Next(100, 700);
+                int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 64);
+                powerUps.Add(new Speed(fireSprite, rndX, rndY, 2f, gameTime));
             }
 
             if (rnd == 2)
@@ -177,9 +193,9 @@ namespace Brawl
                 e.Update(window, gameTime);
             }
 
-            foreach (Heart h in hearts.ToList())
+            foreach (PowerUp p in powerUps.ToList())
             {
-                h.Update(gameTime);
+                p.Update(window, gameTime);
             }
 
             return State.Run;
@@ -201,9 +217,9 @@ namespace Brawl
             {
                 e.Draw(spriteBatch);
             }
-            foreach (Heart h in hearts)
+            foreach (PowerUp p in powerUps)
             {
-                h.Draw(spriteBatch);
+                p.Draw(spriteBatch);
             }
             printText.Print(players[0].Lives.ToString(), spriteBatch, 35, 25);
             printText.Print(players[1].Lives.ToString(), spriteBatch, 780, 25);
@@ -261,7 +277,7 @@ namespace Brawl
             {
                 p.ResetTotal(5f, 0f);
                 enemies.Clear();
-                hearts.Clear();
+                powerUps.Clear();
             }
 
         }
