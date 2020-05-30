@@ -6,8 +6,7 @@
   <SourceFiles>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/background.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/bird.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/mine.png</File>
-    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/tripod.png</File>
+    <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/enemies/meteor.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/exit.png</File>
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/images/menu/highscore.png</File>
@@ -53,7 +52,6 @@
     <File>Z:/Leo/Rudbeck/Programmering 2/Spel/SpaceShooter 2/Content/Sounds/heart.ogg</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

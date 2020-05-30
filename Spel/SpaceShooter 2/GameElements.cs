@@ -15,11 +15,12 @@ namespace Brawl
 {
     static class GameElements
     {
-        static Texture2D heartSprite, birdSprite, speedSprite, fireSprite;
+        static public Texture2D heartSprite, birdSprite, speedSprite, fireSprite, meteorSprite;
         public static List<PowerUp> powerUps = new List<PowerUp>();
         public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
         public static List<Platform> tiles = new List<Platform>();
+        public static List<Bullet> bullets = new List<Bullet>();
         static PrintText printText;
         static int spawnX;
         static Menu menu;
@@ -51,8 +52,8 @@ namespace Brawl
             lobbybg = content.Load<Texture2D>("images/background");
 
             //Laddar in spelare
-            players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
-            players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content));
+            players.Add(new Player1(content.Load<Texture2D>("images/player/test"), 200, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content, content.Load<Texture2D>("images/powerups/fire")));
+            players.Add(new Player2(content.Load<Texture2D>("images/player2/test"), 500, 150, 5f, 0f, content.Load<Texture2D>("images/player/hp/health_bar_5"),content, content.Load<Texture2D>("images/powerups/fire")));
 
             //Laddar in låt och ljudeffekter
             song = content.Load<Song>("Sounds/gametrack");
@@ -98,6 +99,7 @@ namespace Brawl
             heartSprite = content.Load<Texture2D>("images/powerups/heart");
             speedSprite = content.Load<Texture2D>("images/powerups/speed");
             fireSprite = content.Load<Texture2D>("images/powerups/fire");
+            meteorSprite = content.Load<Texture2D>("images/enemies/meteor");
             birdSprite = content.Load<Texture2D>("images/enemies/bird");
             printText = new PrintText(content.Load<SpriteFont>("myFont"));
             highScore.LoadFromFile("highscore.txt");
@@ -149,7 +151,15 @@ namespace Brawl
             {
                 int rndX = random.Next(100, 700);
                 int rndY = random.Next(window.ClientBounds.Height / 3, window.ClientBounds.Height - 64);
-                powerUps.Add(new Speed(fireSprite, rndX, rndY, 2f, gameTime));
+                powerUps.Add(new Fire(fireSprite, rndX, rndY, 2f, gameTime));
+            }
+
+            if (rnd == 1)
+            {
+                int rndX = random.Next(0, 800);
+                int Y = -23;
+                Meteor meteor = new Meteor(meteorSprite, rndX, Y);
+                enemies.Add(meteor);
             }
 
             if (rnd == 2)

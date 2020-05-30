@@ -14,16 +14,17 @@ namespace Brawl
     {
         Animation animation;
         int numOffFrames = 4;
+        protected List<Bullet> bullets1;
+        protected Texture2D bulletTexture;
 
-        public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp,ContentManager content) : base(texture, X, Y, speedX, speedY, hp)
+        public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp,ContentManager content, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY, hp, bulletTexture)
         {
-            this.texture = texture;
+        
             who = 1;
             animation = new Animation("images/player/idle", 200f, numOffFrames, true, content);
+            this.bulletTexture = bulletTexture;
+            bullets1 = new List<Bullet>();
         }
-
-
-   
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
@@ -33,6 +34,7 @@ namespace Brawl
             animation.Texture = content.Load<Texture2D>("images/player/idle");
             animation.NumOffFrames = 4;
             animation.Update(gameTime);
+           
 
             Board.GetState();
             if (Board.IsPressed(Keys.Z))
@@ -67,7 +69,35 @@ namespace Brawl
                 speed.Y = -8f;
                 Timespressed++;
             }
-            
+
+            if (Board.HasBeenPressed(Keys.X) && fire == true)
+            {
+
+                Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+
+                bullets1.Add(temp);
+
+                if (gameTime.TotalGameTime.TotalMilliseconds > timesincelast + 200)
+                {
+                    timesincelast = gameTime.TotalGameTime.TotalMilliseconds;
+                }
+            }
+
+            foreach (Bullet b in bullets1.ToList())
+            {
+                b.Update();
+
+                if (b.CheckCollision(GameElements.players[1]))
+                {
+                    GameElements.players[1].Health--;
+                    GameElements.damage.Play();
+                    b.IsAlive = false;
+                }
+                if (!b.IsAlive)
+                {
+                    bullets1.Remove(b);
+                }
+            }
 
         }
 
@@ -75,6 +105,11 @@ namespace Brawl
         {
             base.Draw(spriteBatch);
             animation.Draw(spriteBatch);
+            foreach (Bullet b in bullets1.ToList())
+            {
+                b.Draw(spriteBatch);
+            }
+
         }
 
         public override void Reset(float speedX, float speedY)
@@ -82,6 +117,7 @@ namespace Brawl
             base.Reset(speedX,speedY);
             vector.X = 200f;
             vector.Y = 200f;
+            bullets1.Clear();
 
         }
 

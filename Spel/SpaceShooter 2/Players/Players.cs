@@ -13,15 +13,16 @@ namespace Brawl
     abstract class Players : PhysicalObject
     {
         float speedX,speedY;
-        bool superSpeed = false;
+        public bool fire = false;
         protected Texture2D hp;
         protected int who = 0;
         protected bool isAttacking;
         int health = 5;
         int lives = 3;
+        protected double timesincelast = 0;
         protected SpriteEffects rotation = SpriteEffects.None;
-        int timespressed = 0;
-        public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp) : base(texture, X, Y, speedX, speedY)
+        protected int timespressed = 0;
+        public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY)
         {
             this.hp = hp;
             this.speedX = speedX;
@@ -35,10 +36,22 @@ namespace Brawl
 
         }
 
+        public SpriteEffects Rotation
+        {
+            get { return this.rotation; }
+            set { this.rotation = value; }
+        }
+
         public float SuperSpeed
         {
             get { return speed.X; }
             set { speed.X = value; }
+        }
+
+        public bool Fire
+        {
+            get { return fire; }
+            set { fire = value; }
         }
 
         public int Health
@@ -60,6 +73,15 @@ namespace Brawl
                 other.health--;
                 GameElements.damage.Play();
             }
+
+            /*foreach (Bullet b in bullets.ToList())
+            {
+                if (b.CheckCollision(other))
+                {
+                    other.health--;
+                    GameElements.damage.Play();
+                }
+            }*/
         }
 
         virtual public void Update(GameWindow window, GameTime gameTime, ContentManager content)
@@ -152,6 +174,9 @@ namespace Brawl
                     spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1f, SpriteEffects.None, 0f);
                     break;
             }
+
+         
+
         }
 
         virtual public void Reset(float speedX, float speedY)
@@ -162,6 +187,7 @@ namespace Brawl
             isAlive = true;
             isAttacking = false;
             Timespressed = 0;
+            fire = false;
         }
         virtual public void ResetTotal(float speedX, float speedY)
         {

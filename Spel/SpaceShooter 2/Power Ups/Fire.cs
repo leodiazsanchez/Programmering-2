@@ -28,7 +28,7 @@ namespace Brawl
                     {
                         GameElements.powerUps.Remove(this);
                         GameElements.powerUp.Play(volume: 0.1f, pitch: 0.0f, pan: 0.0f);
-                        p.SuperSpeed = 7.5f;
+                        p.Fire = true;
                     }
                 }
                 else
@@ -50,7 +50,7 @@ namespace Brawl
             {
                 if (stop < gameTime.TotalGameTime.TotalMilliseconds)
                 {
-                    p.SuperSpeed = 5;
+                    p.Fire = false;
                 }
             }
 

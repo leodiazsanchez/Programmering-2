@@ -60,6 +60,7 @@ namespace Brawl
                 {
                     p.Health--;
                     hit = true;
+                    speed.X += 3f;
                 }
 
             }

@@ -22,7 +22,7 @@ namespace Brawl
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, vector, Color.White);
+             spriteBatch.Draw(texture, vector, Color.White);
         }
 
         public float X{ get {return vector.X;} }
