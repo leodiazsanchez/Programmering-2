@@ -48,7 +48,7 @@ namespace Brawl
             menu.AddItem(content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
 
             //Laddar in backgrund
-            background = new Background(content.Load<Texture2D>("images/background"), window);
+            background = new Background(content.Load<Texture2D>("images/background"));
             lobbybg = content.Load<Texture2D>("images/background");
 
             //Laddar in spelare

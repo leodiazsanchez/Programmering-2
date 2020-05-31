@@ -19,7 +19,6 @@ namespace Brawl
             set { speed.X = value; }
         }
 
-
         public void Update()
         {
             vector.X += speed.X;

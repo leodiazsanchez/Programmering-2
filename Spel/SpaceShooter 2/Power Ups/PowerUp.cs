@@ -19,7 +19,5 @@ namespace Brawl
         }
 
         abstract public void Update(GameWindow window, GameTime gameTime);
-
-      
     }
 }

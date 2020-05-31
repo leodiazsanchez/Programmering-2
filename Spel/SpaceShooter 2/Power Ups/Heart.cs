@@ -14,8 +14,6 @@ namespace Brawl
 
         public Heart(Texture2D texture, float X, float Y, float speedY, GameTime gameTime) : base(texture, X, Y, speedY, gameTime)
         {
- 
-
         }
 
 

@@ -18,7 +18,6 @@ namespace Brawl
         protected Texture2D bulletTexture;
         public Player2(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, ContentManager content, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY, hp, bulletTexture)
         {
-            this.texture = texture;
             who = 2;
             animation = new Animation("images/player2/idle", 200f, numOffFrames, true, content);
             this.bulletTexture = bulletTexture;
@@ -69,7 +68,7 @@ namespace Brawl
             }
 
 
-            if (Board.HasBeenPressed(Keys.X) && fire == true)
+            if (Board.HasBeenPressed(Keys.Space) && fire == true)
             {
                 if (rotation == SpriteEffects.None)
                 {
@@ -92,6 +91,21 @@ namespace Brawl
                 }
             }
 
+            foreach (Bullet b in bullets.ToList())
+            {
+                b.Update();
+
+                if (b.CheckCollision(GameElements.players[0]))
+                {
+                    GameElements.players[0].Health--;
+                    GameElements.damage.Play();
+                    b.IsAlive = false;
+                }
+                if (!b.IsAlive)
+                {
+                    bullets.Remove(b);
+                }
+            }
 
         }
    

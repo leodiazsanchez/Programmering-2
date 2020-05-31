@@ -11,7 +11,7 @@ namespace Brawl
     class Background
     {
         Texture2D texture;
-        public Background(Texture2D texture, GameWindow window)
+        public Background(Texture2D texture)
         {
             this.texture = texture;
         }

@@ -19,7 +19,6 @@ namespace Brawl
 
         public Player1(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp,ContentManager content, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY, hp, bulletTexture)
         {
-        
             who = 1;
             animation = new Animation("images/player/idle", 200f, numOffFrames, true, content);
             this.bulletTexture = bulletTexture;

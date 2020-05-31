@@ -38,19 +38,6 @@ namespace Brawl
 
         }
 
-        public bool HasFired
-        {
-            get { return this.hasFired; }
-            set { this.hasFired = value; }
-
-        }
-
-        public SpriteEffects Rotation
-        {
-            get { return this.rotation; }
-            set { this.rotation = value; }
-        }
-
         public float SuperSpeed
         {
             get { return speed.X; }
@@ -83,14 +70,6 @@ namespace Brawl
                 GameElements.damage.Play();
             }
 
-            /*foreach (Bullet b in bullets.ToList())
-            {
-                if (b.CheckCollision(other))
-                {
-                    other.health--;
-                    GameElements.damage.Play();
-                }
-            }*/
         }
 
         virtual public void Update(GameWindow window, GameTime gameTime, ContentManager content)
@@ -183,9 +162,6 @@ namespace Brawl
                     spriteBatch.Draw(hp, new Vector2(758, 10),null, Color.White, 0f, new Vector2(0,0), 1f, SpriteEffects.None, 0f);
                     break;
             }
-
-         
-
         }
 
         virtual public void Reset(float speedX, float speedY)
@@ -198,6 +174,7 @@ namespace Brawl
             Timespressed = 0;
             fire = false;
         }
+
         virtual public void ResetTotal(float speedX, float speedY)
         {
             Reset(speedX, speedY);

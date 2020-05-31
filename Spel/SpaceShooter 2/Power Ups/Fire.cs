@@ -13,7 +13,7 @@ namespace Brawl
         double stop;
         public Fire(Texture2D texture, float X, float Y, float speedY, GameTime gameTime) : base(texture, X, Y, speedY, gameTime)
         {
-            stop = gameTime.TotalGameTime.TotalMilliseconds + 10000;
+            stop = gameTime.TotalGameTime.TotalMilliseconds + 3000;
         }
 
 
