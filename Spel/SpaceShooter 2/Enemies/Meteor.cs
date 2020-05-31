@@ -33,7 +33,7 @@ namespace Brawl
 
             }
 
-            foreach (Platform t in GameElements.tiles)
+            foreach (PhysicalObject t in GameElements.tiles)
             {
 
                 if (CheckCollision(t))

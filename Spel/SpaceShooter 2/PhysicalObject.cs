@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Brawl
 {
+    
     class PhysicalObject : MovingObject
     {
         protected bool isAlive = true;
@@ -19,28 +21,10 @@ namespace Brawl
 
         public void CheckTiles()
         {
-            foreach (Platform t in GameElements.tiles)
+            foreach (PhysicalObject t in GameElements.tiles)
             {
                 if (speed.Y >= 0)
                 {
-                    /*if (speed.X > 0)
-                    {
-                        PhysicalObject temp = new PhysicalObject(texture,X+speed.X,Y,speed.X,speed.Y);
-                        if (temp.CheckCollision(t))
-                        {
-                            speed.X = 0f;
-                            vector.X += t.X - X - Width;
-                        }
-                    }
-                    if (speed.X < 0)
-                    {
-                        PhysicalObject temp = new PhysicalObject(texture, X + speed.X, Y, speed.X, speed.Y);
-                        if (temp.CheckCollision(t))
-                        {
-                            speed.X = 0f;
-                            vector.X -= t.X + X + Width;
-                        }
-                    }*/
                     if (speed.Y > 0 && Y + t.Height / 2 < t.Y)
                     {
                         PhysicalObject temp = new PhysicalObject(texture, X, Y + speed.Y, speed.X, speed.Y);

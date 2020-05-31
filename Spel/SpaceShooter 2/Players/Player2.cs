@@ -14,14 +14,12 @@ namespace Brawl
     {
         Animation animation;
         int numOffFrames = 4;
-        protected List<Bullet> bullets;
         protected Texture2D bulletTexture;
         public Player2(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, ContentManager content, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY, hp, bulletTexture)
         {
             who = 2;
             animation = new Animation("images/player2/idle", 200f, numOffFrames, true, content);
             this.bulletTexture = bulletTexture;
-            bullets = new List<Bullet>();
         }
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
@@ -70,25 +68,7 @@ namespace Brawl
 
             if (Board.HasBeenPressed(Keys.Space) && fire == true)
             {
-                if (rotation == SpriteEffects.None)
-                {
-                    Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
-                    temp.SpeedX = 6f;
-                    bullets.Add(temp);
-
-                }
-                else
-                {
-                    Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
-                    temp.SpeedX = -6f;
-                    bullets.Add(temp);
-                }
-
-
-                if (gameTime.TotalGameTime.TotalMilliseconds > timesincelast + 200)
-                {
-                    timesincelast = gameTime.TotalGameTime.TotalMilliseconds;
-                }
+                base.Shoot(gameTime);
             }
 
             foreach (Bullet b in bullets.ToList())

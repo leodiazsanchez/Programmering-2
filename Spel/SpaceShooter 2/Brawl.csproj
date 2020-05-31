@@ -69,7 +69,6 @@
     <Compile Include="MenuItem.cs" />
     <Compile Include="MovingObject.cs" />
     <Compile Include="PhysicalObject.cs" />
-    <Compile Include="Platform.cs" />
     <Compile Include="Players\Player1.cs" />
     <Compile Include="Players\Player2.cs" />
     <Compile Include="Players\Players.cs" />

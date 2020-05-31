@@ -40,8 +40,10 @@ public class HighScore
     int maxInList = 5; // Hur många som får vara i listan
     List<HSItem> highscore = new List<HSItem>();
     string name; // Spelarens namn
-    bool ärduklarellershuno = false;
-    public bool Ärduklarellershuno { get { return ärduklarellershuno; } set { ärduklarellershuno = value; } }
+    bool klar = false;
+    bool spelk = false;
+    public bool Klar { get { return klar; } set { klar = value; } }
+    public bool SpelKlart { get { return spelk; } set { spelk = value; } }
     // Används för att skriva ut vilket tecken spelaren har valt just nu:
     string currentChar;
     int key_index = 0; // Denna används för att mata in spelarens namn
@@ -111,7 +113,7 @@ public class HighScore
             highscore.RemoveAt(maxInList);
         }
 
-        Ärduklarellershuno = true;
+       Klar = true;
     }
 
     // =======================================================================
@@ -212,8 +214,12 @@ public class HighScore
     // =======================================================================
     public void EnterDraw(SpriteBatch spriteBatch, SpriteFont font)
     {
-        string text = "ENTER NAME:" + name + currentChar;
-        spriteBatch.DrawString(font, text, Vector2.Zero, Color.White);
+        if (SpelKlart)
+        {
+            string text = "ENTER NAME:" + name + currentChar;
+            spriteBatch.DrawString(font, text, Vector2.Zero, Color.White);
+        }
+  
         string text2 = "";
 
         foreach (HSItem h in highscore)

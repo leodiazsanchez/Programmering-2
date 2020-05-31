@@ -16,9 +16,11 @@ namespace Brawl
         public bool fire = false;
         protected Texture2D hp;
         protected int who = 0;
+        protected List<Bullet> bullets;
         protected bool isAttacking;
         int health = 5;
         int lives = 3;
+        Texture2D bulletTexture;
         protected double timesincelast = 0;
         protected SpriteEffects rotation = SpriteEffects.None;
         protected int timespressed = 0;
@@ -26,9 +28,11 @@ namespace Brawl
 
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY)
         {
+            this.bulletTexture = bulletTexture;
             this.hp = hp;
             this.speedX = speedX;
             this.speedY = speedY;
+            bullets = new List<Bullet>();
         }
 
         public int Timespressed
@@ -70,6 +74,29 @@ namespace Brawl
                 GameElements.damage.Play();
             }
 
+        }
+
+        public void Shoot(GameTime gameTime)
+        {
+            if (rotation == SpriteEffects.None)
+            {
+                Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                temp.SpeedX = 6f;
+                bullets.Add(temp);
+
+            }
+            else
+            {
+                Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                temp.SpeedX = -6f;
+                bullets.Add(temp);
+            }
+
+
+            if (gameTime.TotalGameTime.TotalMilliseconds > timesincelast + 200)
+            {
+                timesincelast = gameTime.TotalGameTime.TotalMilliseconds;
+            }
         }
 
         virtual public void Update(GameWindow window, GameTime gameTime, ContentManager content)

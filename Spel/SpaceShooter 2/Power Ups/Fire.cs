@@ -19,7 +19,7 @@ namespace Brawl
 
         public override void Update(GameWindow window, GameTime gameTime)
         {
-
+            base.Update(window,gameTime);
             foreach (Players p in GameElements.players)
             {
                 if (isAlive)
@@ -38,14 +38,6 @@ namespace Brawl
 
             }
 
-
-            CheckTiles();
-            vector.Y += speed.Y;
-            speed.Y += 0.5f;
-            if (timeToDie < gameTime.TotalGameTime.TotalMilliseconds)
-            {
-                isAlive = false;
-            }
             foreach (Players p in GameElements.players)
             {
                 if (stop < gameTime.TotalGameTime.TotalMilliseconds)

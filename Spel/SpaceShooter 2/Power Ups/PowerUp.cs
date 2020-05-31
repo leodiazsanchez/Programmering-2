@@ -18,6 +18,17 @@ namespace Brawl
 
         }
 
-        abstract public void Update(GameWindow window, GameTime gameTime);
+
+        virtual public void Update(GameWindow window, GameTime gameTime)
+        {
+            CheckTiles();
+            vector.Y += speed.Y;
+            speed.Y += 0.5f;
+
+            if (timeToDie < gameTime.TotalGameTime.TotalMilliseconds)
+            {
+                isAlive = false;
+            }
+        }
     }
 }

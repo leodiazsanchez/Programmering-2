@@ -19,7 +19,7 @@ namespace Brawl
         public static List<PowerUp> powerUps = new List<PowerUp>();
         public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
-        public static List<Platform> tiles = new List<Platform>();
+        public static List<PhysicalObject> tiles = new List<PhysicalObject>();
         public static List<Bullet> bullets = new List<Bullet>();
         static PrintText printText;
         static int spawnX;
@@ -67,30 +67,30 @@ namespace Brawl
             //Laddar in värld
             for (int i = 150; i < 300; i+= 16)
             {
-                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 375, 0f, 0f));
+                tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/island"), i, 375, 0f, 0f));
             }
 
             for (int i = 400; i < 600; i += 16)
             {
-                tiles.Add(new Platform(content.Load<Texture2D>("images/platform/island"), i, 250, 0f, 0f));
+                tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/island"), i, 250, 0f, 0f));
             }
 
             for (int i = 100; i < 700; i += 16)
             {   
                if(i== 100)
                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile4"), i, window.ClientBounds.Height - 16, 0f, 0f));
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile3"), i, window.ClientBounds.Height - 32, 0f, 0f));
+                    tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile4"), i, window.ClientBounds.Height - 16, 0f, 0f));
+                    tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile3"), i, window.ClientBounds.Height - 32, 0f, 0f));
                }
                else if (i == 692)
                {
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile6"), i, window.ClientBounds.Height - 16, 0f, 0f));
-                    tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile5"), i, window.ClientBounds.Height - 32, 0f, 0f));
+                    tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile6"), i, window.ClientBounds.Height - 16, 0f, 0f));
+                    tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile5"), i, window.ClientBounds.Height - 32, 0f, 0f));
                }
                else
                {
-                   tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile"), i, window.ClientBounds.Height - 32, 0f, 0f));
-                   tiles.Add(new Platform(content.Load<Texture2D>("images/platform/tile2"), i, window.ClientBounds.Height - 16, 0f, 0f));
+                   tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile"), i, window.ClientBounds.Height - 32, 0f, 0f));
+                   tiles.Add(new PhysicalObject(content.Load<Texture2D>("images/platform/tile2"), i, window.ClientBounds.Height - 16, 0f, 0f));
                }
           
             }
@@ -190,6 +190,7 @@ namespace Brawl
 
                 if (!p.IsAlive)
                 {
+                    highScore.SpelKlart = true;
                     return State.HighScore;
                 }
 
@@ -215,7 +216,7 @@ namespace Brawl
         {
             background.Draw(spriteBatch);
            
-            foreach (Platform t in tiles.ToList())
+            foreach (PhysicalObject t in tiles.ToList())
             {
                 t.Draw(spriteBatch);
             }
@@ -252,10 +253,11 @@ namespace Brawl
                 }
 
                 //Kollar om alla värden blivit satta innan spelet 
-                if (highScore.Ärduklarellershuno)
+                if (highScore.Klar)
                 {
+                    highScore.SpelKlart = false;
                     ResetTotal(window, content);
-                    highScore.Ärduklarellershuno = false;
+                    highScore.Klar= false;
                     return State.HighScore;
                 }
             }
