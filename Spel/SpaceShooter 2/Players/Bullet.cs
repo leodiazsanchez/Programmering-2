@@ -13,39 +13,27 @@ namespace Brawl
         {
         }
 
+        public float SpeedX
+        {
+            get { return speed.X; }
+            set { speed.X = value; }
+        }
+
+
         public void Update()
         {
             vector.X += speed.X;
 
-            /*foreach(Player1 p in GameElements.players)
-            {
-                if (p.Rotation == SpriteEffects.None)
-                {
-                    
-                }
-                else
-                {
-                    vector.X = -speed.X;
-                }
-            }
-
-            foreach (Player2 p in GameElements.players)
-            {
-                if (p.Rotation == SpriteEffects.None)
-                {
-                    vector.X = speed.X;
-                }
-                else
-                {
-                    vector.X = -speed.X;
-                }
-            }*/
-
-
-            /*if (vector.X < 0)
+            if (vector.X < 0)
             {
                 isAlive = false;
-            }*/
+            }
+
+            if(vector.X > 800)
+            {
+                isAlive = false;
+            }
+
         }
     }
 }

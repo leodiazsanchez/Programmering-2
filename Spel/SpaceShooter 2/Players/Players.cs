@@ -22,6 +22,8 @@ namespace Brawl
         protected double timesincelast = 0;
         protected SpriteEffects rotation = SpriteEffects.None;
         protected int timespressed = 0;
+        protected bool hasFired = false;
+
         public Players(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY)
         {
             this.hp = hp;
@@ -33,6 +35,13 @@ namespace Brawl
         {
             get { return this.timespressed; }
             set { this.timespressed = value; }
+
+        }
+
+        public bool HasFired
+        {
+            get { return this.hasFired; }
+            set { this.hasFired = value; }
 
         }
 

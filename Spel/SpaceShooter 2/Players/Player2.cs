@@ -14,7 +14,7 @@ namespace Brawl
     {
         Animation animation;
         int numOffFrames = 4;
-        protected List<Bullet> bullets2;
+        protected List<Bullet> bullets;
         protected Texture2D bulletTexture;
         public Player2(Texture2D texture, float X, float Y, float speedX, float speedY, Texture2D hp, ContentManager content, Texture2D bulletTexture) : base(texture, X, Y, speedX, speedY, hp, bulletTexture)
         {
@@ -22,7 +22,7 @@ namespace Brawl
             who = 2;
             animation = new Animation("images/player2/idle", 200f, numOffFrames, true, content);
             this.bulletTexture = bulletTexture;
-            bullets2 = new List<Bullet>();
+            bullets = new List<Bullet>();
         }
 
         public override void Update(GameWindow window, GameTime gameTime, ContentManager content)
@@ -68,33 +68,27 @@ namespace Brawl
                 }
             }
 
-            if (Board.HasBeenPressed(Keys.Space) && fire == true)
+
+            if (Board.HasBeenPressed(Keys.X) && fire == true)
             {
+                if (rotation == SpriteEffects.None)
+                {
+                    Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                    temp.SpeedX = 6f;
+                    bullets.Add(temp);
 
-                Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                }
+                else
+                {
+                    Bullet temp = new Bullet(bulletTexture, vector.X + texture.Width / 2, vector.Y);
+                    temp.SpeedX = -6f;
+                    bullets.Add(temp);
+                }
 
-                bullets2.Add(temp);
-              
 
                 if (gameTime.TotalGameTime.TotalMilliseconds > timesincelast + 200)
                 {
                     timesincelast = gameTime.TotalGameTime.TotalMilliseconds;
-                }
-            }
-
-            foreach (Bullet b in bullets2.ToList())
-            {
-                b.Update();
-
-                if (b.CheckCollision(GameElements.players[0]))
-                {
-                    GameElements.players[0].Health--;
-                    GameElements.damage.Play();
-                    b.IsAlive = false;
-                }
-                if (!b.IsAlive)
-                {
-                    bullets2.Remove(b);
                 }
             }
 
@@ -105,7 +99,7 @@ namespace Brawl
         {
             base.Draw(spriteBatch);
             animation.Draw(spriteBatch);
-            foreach (Bullet b in bullets2.ToList())
+            foreach (Bullet b in bullets.ToList())
             {
                 b.Draw(spriteBatch);
             }
@@ -116,7 +110,7 @@ namespace Brawl
             base.Reset(speedX, speedY);
             vector.X = 500f;
             vector.Y = 200f;
-            bullets2.Clear();
+            bullets.Clear();
         }
 
     }
