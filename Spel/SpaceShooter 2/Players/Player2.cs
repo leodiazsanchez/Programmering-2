@@ -50,9 +50,7 @@ namespace Brawl
 
             if (Board.HasBeenPressed(Keys.Up) && Timespressed < 2)
             {
-                speed.Y = -8f;
-                Timespressed++;
-
+                Jump();
             }
 
             if (Board.IsPressed(Keys.RightControl))
@@ -68,7 +66,7 @@ namespace Brawl
 
             if (Board.HasBeenPressed(Keys.Space) && fire == true)
             {
-                base.Shoot(gameTime);
+                Shoot(gameTime);
             }
 
             foreach (Bullet b in bullets.ToList())

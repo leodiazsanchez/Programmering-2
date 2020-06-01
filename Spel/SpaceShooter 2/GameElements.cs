@@ -20,7 +20,6 @@ namespace Brawl
         public static List<Enemy> enemies = new List<Enemy>();
         public static List<Players> players = new List<Players>();
         public static List<PhysicalObject> tiles = new List<PhysicalObject>();
-        public static List<Bullet> bullets = new List<Bullet>();
         static PrintText printText;
         static int spawnX;
         static Menu menu;

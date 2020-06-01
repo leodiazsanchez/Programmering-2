@@ -99,6 +99,12 @@ namespace Brawl
             }
         }
 
+        public void Jump()
+        {
+            speed.Y = -8f;
+            Timespressed++;
+        }
+
         virtual public void Update(GameWindow window, GameTime gameTime, ContentManager content)
         {
             isAttacking = false;

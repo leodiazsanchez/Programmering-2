@@ -63,13 +63,12 @@ namespace Brawl
 
             if (Board.HasBeenPressed(Keys.W) && Timespressed < 2)
             {
-                speed.Y = -8f;
-                Timespressed++;
+                Jump();
             }
 
             if (Board.HasBeenPressed(Keys.X) && fire == true)
             {
-                base.Shoot(gameTime);
+                Shoot(gameTime);
             }
 
             foreach (Bullet b in bullets.ToList())
